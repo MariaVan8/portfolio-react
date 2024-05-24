@@ -1,0 +1,107 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+
+.header {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../../assets/Images/moon.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 45px;
+	&_overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+	}
+	.text-layer {
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		display: flex;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: white; /* Or any color that contrasts with your background */
+	}
+
+	.text-layer p {
+		margin: 0;
+		position: absolute;
+		font-size: $font-size-xxlarge;
+	}
+
+	.first-layer {
+		z-index: 2; /* Higher index on top */
+		-webkit-text-stroke-width: 0.2px;
+		-webkit-text-stroke-color: white;
+		font-weight: bolder;
+		color: transparent;
+		position: relative;
+		font-family: $montserrat-alternates-light;
+	}
+
+	.second-layer {
+		position: relative;
+		z-index: 1; /* Lower index below */
+		top: 0;
+		left: 0;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+
+		&_text {
+			color: $primary-color;
+			font-family: $montserrat-alternates-bold;
+			font-weight: bold;
+			font-size: $font-size-xlarge;
+		}
+		.accent {
+			color: $secondary-color;
+		}
+	}
+
+	.second-layer p {
+		margin-top: 10px; /* Adjust spacing between lines */
+		font-size: $font-size-xlarge;
+	}
+	// &_text-container {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	span {
+	// 		font-size: $font-size-xlarge;
+	// 		font-family: $montserrat-alternates-bold;
+	// 		font-weight: bold;
+	// 		color: $primary-color;
+	// 		letter-spacing: 1px;
+	// 		line-height: 2.5rem;
+	// 		.accent {
+	// 			color: $secondary-color;
+	// 		}
+	// 	}
+	// 	.thin {
+	// 		font-family: $montserrat-alternates-light;
+	// 		font-weight: 300;
+	// 	}
+	// }
+	// img {
+	// 	width: 175px;
+	// 	height: 175px;
+	// 	margin: 0 auto;
+	// 	border-radius: 50%;
+	// }
+	// button {
+	// 	background-color: $secondary-color;
+	// }
+}
+img {
+	width: 175px;
+	height: 175px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
