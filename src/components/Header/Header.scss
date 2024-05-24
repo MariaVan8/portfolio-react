@@ -8,7 +8,7 @@
 	background-image: url("../../assets/Images/moon.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 45px;
+
 	&_overlay {
 		position: absolute;
 		top: 0;
@@ -17,15 +17,22 @@
 		height: 100%;
 		background: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
 	}
+	&_box {
+		display: flex;
+		flex-direction: column;
+		gap: 6rem;
+		align-items: center;
+		width: 100%;
+	}
 	.text-layer {
 		align-items: center;
 		justify-content: center;
-		position: absolute;
+		position: relative;
 		top: 50%;
 		left: 50%;
 		width: 100%;
 		display: flex;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, 30%);
 		text-align: center;
 		color: white; /* Or any color that contrasts with your background */
 	}
@@ -33,14 +40,20 @@
 	.text-layer p {
 		margin: 0;
 		position: absolute;
-		font-size: $font-size-xxlarge;
+		//font-size: 80px;
+		width: 98%;
+		padding-bottom: 10rem;
+		line-height: 3.5rem;
+		text-align: left;
 	}
 
 	.first-layer {
 		z-index: 2; /* Higher index on top */
-		-webkit-text-stroke-width: 0.2px;
+		-webkit-text-stroke-width: 0.3px;
 		-webkit-text-stroke-color: white;
 		font-weight: bolder;
+		//width: 100%;
+		font-size: 70px;
 		color: transparent;
 		position: relative;
 		font-family: $montserrat-alternates-light;
@@ -54,7 +67,8 @@
 		text-align: left;
 		display: flex;
 		flex-direction: column;
-
+		padding: 0 45px;
+		letter-spacing: 2px;
 		&_text {
 			color: $primary-color;
 			font-family: $montserrat-alternates-bold;
@@ -70,34 +84,23 @@
 		margin-top: 10px; /* Adjust spacing between lines */
 		font-size: $font-size-xlarge;
 	}
-	// &_text-container {
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	span {
-	// 		font-size: $font-size-xlarge;
-	// 		font-family: $montserrat-alternates-bold;
-	// 		font-weight: bold;
-	// 		color: $primary-color;
-	// 		letter-spacing: 1px;
-	// 		line-height: 2.5rem;
-	// 		.accent {
-	// 			color: $secondary-color;
-	// 		}
-	// 	}
-	// 	.thin {
-	// 		font-family: $montserrat-alternates-light;
-	// 		font-weight: 300;
-	// 	}
-	// }
-	// img {
-	// 	width: 175px;
-	// 	height: 175px;
-	// 	margin: 0 auto;
-	// 	border-radius: 50%;
-	// }
-	// button {
-	// 	background-color: $secondary-color;
-	// }
+
+	.img-container {
+		position: relative;
+	}
+
+	&_text-wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding: 0 45px;
+		p {
+			text-align: center;
+		}
+		button {
+			text-align: center;
+		}
+	}
 }
 img {
 	width: 175px;
