@@ -1,9 +1,11 @@
 import "../Header/Header.scss";
+import Navbar from "../NavBar/Navbar";
 import perfil from "../../assets/Images/purple4.png";
 function Header() {
 	return (
 		<>
 			<header className="header">
+				<Navbar />
 				<div className="header_overlay"></div>
 				<div className="header_box">
 					<div className="text-layer">
