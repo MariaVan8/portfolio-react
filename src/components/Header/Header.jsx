@@ -1,5 +1,6 @@
 import "../Header/Header.scss";
 import Navbar from "../NavBar/Navbar";
+
 import perfil from "../../assets/Images/purple4.png";
 function Header() {
 	return (
@@ -33,7 +34,7 @@ function Header() {
 						learning. I am always eager to
 						<span>adapt and contribute positively</span> to dynamic teams.
 					</p>
-					<button>About me</button>
+					<button className="header_btn">About me</button>
 				</div>
 			</header>
 		</>

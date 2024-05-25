@@ -42,10 +42,10 @@
 		position: absolute;
 		//font-size: 80px;
 		width: 98%;
-		padding-bottom: 12rem;
+		padding-bottom: 8rem;
 		line-height: 3.5rem;
 		text-align: left;
-		letter-spacing: 6px;
+		letter-spacing: 5px;
 	}
 
 	.first-layer {
@@ -75,6 +75,7 @@
 			font-family: $montserrat-alternates-bold;
 			font-weight: bold;
 			font-size: $font-size-xxlarge;
+			line-height: 2.5rem;
 		}
 		.accent {
 			color: $secondary-color;
@@ -88,6 +89,12 @@
 
 	.img-container {
 		position: relative;
+		img {
+			width: 175px;
+			height: 175px;
+			margin: 0 auto;
+			border-radius: 50%;
+		}
 	}
 
 	&_text-wrapper {
@@ -95,6 +102,7 @@
 		display: flex;
 		flex-direction: column;
 		padding: 0 45px;
+		align-items: center;
 		p {
 			text-align: center;
 		}
@@ -102,10 +110,9 @@
 			text-align: center;
 		}
 	}
-}
-img {
-	width: 175px;
-	height: 175px;
-	margin: 0 auto;
-	border-radius: 50%;
+
+	&_btn {
+		background-color: $secondary-color;
+		width: 200px;
+	}
 }

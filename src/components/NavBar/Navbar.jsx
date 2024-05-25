@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.scss";
 
 function Navbar() {
@@ -19,13 +19,13 @@ function Navbar() {
 				</div>
 				<ul className={`nav-box ${isMenuOpen ? "show" : "hidden"}`}>
 					<a href="">
-						<li className="nav_item">Projects</li>
+						<li className="nav_item">PROJECTS</li>
 					</a>
 					<a href="">
-						<li className="nav_item">About me</li>
+						<li className="nav_item">ABOUT ME</li>
 					</a>
 					<a href="">
-						<li className="nav_item">Contact</li>
+						<li className="nav_item">CONTACT</li>
 					</a>
 				</ul>
 			</nav>
