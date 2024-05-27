@@ -5,7 +5,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	height: 50vh;
+	height: 40vh;
+	flex-direction: row;
 }
 
 .circle {
@@ -15,7 +16,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #000; /* Fallback for browsers that do not support conic-gradient */
+	background-color: #e6e6e6; /* Fallback for browsers that do not support conic-gradient */
 	position: relative;
 }
 
@@ -27,10 +28,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.icon {
+	width: 34px;
+	height: 34px;
+	margin-bottom: 5px;
 }
 
 .percentage {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: bold;
-	color: #000;
+	color: $primary-color;
 }

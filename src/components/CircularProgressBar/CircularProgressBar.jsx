@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import "./CircularProgressBar.scss";
 
-function CircularProgressBar({ percentage, color }) {
+function CircularProgressBar({ percentage, color, icon }) {
 	return (
 		<div className="circle-container">
 			<div
@@ -13,6 +13,13 @@ function CircularProgressBar({ percentage, color }) {
 					}deg, #e6e6e6 0deg)`,
 				}}>
 				<div className="inner-circle">
+					{icon && (
+						<img
+							src={icon}
+							alt="icon"
+							className="icon"
+						/>
+					)}
 					<span className="percentage">{percentage}%</span>
 				</div>
 			</div>
@@ -23,6 +30,7 @@ function CircularProgressBar({ percentage, color }) {
 CircularProgressBar.propTypes = {
 	percentage: PropTypes.number.isRequired,
 	color: PropTypes.string.isRequired,
+	icon: PropTypes.string,
 };
 
 export default CircularProgressBar;

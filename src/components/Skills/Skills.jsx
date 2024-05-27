@@ -1,6 +1,9 @@
 import "./Skills.scss";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import CircularProgressBar from "../CircularProgressBar/CircularProgressBar";
+import reactIcon from "../../assets/icons/react.png";
+import angular from "../../assets/icons/angular.png";
+import DatabaseBox from "../DatabaseBox/DatabaseBox";
 
 function Skills() {
 	return (
@@ -25,18 +28,23 @@ function Skills() {
 					<div className="skills-subtitle">Frameworks</div>
 					<div className="circle-container">
 						<CircularProgressBar
-							percentage={70}
+							percentage={80}
 							color="#a536cf"
+							icon={reactIcon}
 						/>
 						<CircularProgressBar
-							percentage={75}
+							percentage={65}
 							color="#a536cf"
+							icon={angular}
 						/>
 						<CircularProgressBar
-							percentage={85}
+							percentage={90}
 							color="#a536cf"
+							icon={reactIcon}
 						/>
 					</div>
+					<div className="skills-subtitle">Databases</div>
+					<DatabaseBox />
 				</div>
 			</div>
 		</>
