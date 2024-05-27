@@ -9,10 +9,12 @@ import azure from "../../assets/icons/azure.png";
 function DatabaseBox() {
 	return (
 		<>
-			<div className="box-container">
-				<div className="box">
+			<div className="box">
+				<div className="box-content-sql">
 					<div className="box-content">
-						<div className="box-content-title">SQL</div>
+						<div className="box-title">SQL</div>
+					</div>
+					<div className="box-content">
 						<div className="box-content-bigger">
 							<div className="box-content-big">
 								<div className="box-content-subtitle">MySQL Workbench</div>
@@ -30,30 +32,30 @@ function DatabaseBox() {
 							</div>
 						</div>
 					</div>
-					<div className="box-wrapper">
+				</div>
+				<div className="box-wrapper">
+					<div className="box-content">
+						<div className="box-content-subtitle">Postgres</div>
+						<img
+							src={postgres}
+							alt="postgres"
+						/>
+					</div>
+					<div className="box-wrapper-row">
 						<div className="box-content">
-							<div className="box-content-subtitle">Postgres</div>
+							<div className="box-content-subtitle">Azure</div>
 							<img
-								src={postgres}
-								alt="postgres"
+								src={azure}
+								alt="mongo"
 							/>
 						</div>
-						<div className="box-wrapper-row">
-							<div className="box-content">
-								<div className="box-content-subtitle">Azure</div>
-								<img
-									src={azure}
-									alt="mongo"
-								/>
-							</div>
-							<div className="box-content">
-								<div className="box-content-title">NoSQL</div>
-								<div className="box-content-subtitle">MongoDB</div>
-								<img
-									src={mongo}
-									alt="mongo"
-								/>
-							</div>
+						<div className="box-content">
+							<div className="box-content-title">NoSQL</div>
+							<div className="box-content-subtitle">MongoDB</div>
+							<img
+								src={mongo}
+								alt="mongo"
+							/>
 						</div>
 					</div>
 				</div>

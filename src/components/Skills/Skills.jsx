@@ -3,6 +3,7 @@ import ProgressBar from "../ProgressBar/ProgressBar";
 import CircularProgressBar from "../CircularProgressBar/CircularProgressBar";
 import reactIcon from "../../assets/icons/react.png";
 import angular from "../../assets/icons/angular.png";
+import vue from "../../assets/icons/vue.png";
 import DatabaseBox from "../DatabaseBox/DatabaseBox";
 
 function Skills() {
@@ -40,7 +41,7 @@ function Skills() {
 						<CircularProgressBar
 							percentage={90}
 							color="#a536cf"
-							icon={reactIcon}
+							icon={vue}
 						/>
 					</div>
 					<div className="skills-subtitle">Databases</div>
