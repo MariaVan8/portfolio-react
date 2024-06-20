@@ -1,5 +1,5 @@
 import "./ProgressBar.scss";
-import html from "../../assets/icons/html-test2.png";
+import html from "../../assets/icons/html1.png";
 import css from "../../assets/icons/CSS1.png";
 import js from "../../assets/icons/javascript1.png";
 import python from "../../assets/icons/python1.png";
