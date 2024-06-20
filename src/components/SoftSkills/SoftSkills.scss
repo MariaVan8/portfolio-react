@@ -1,0 +1,53 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+
+.soft_skills {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2rem;
+	&-box {
+		//width: 30%;
+		//text-align: center;
+		h3 {
+			font-size: $font-size-small;
+			font-family: $montserrat-alternates-bold;
+		}
+	}
+	&-circle {
+		width: 10px;
+		height: 10px;
+		background-color: white;
+		display: block;
+		border-radius: 50%;
+	}
+	&-top {
+		display: flex;
+		flex-direction: column;
+		gap: 6rem;
+		text-align: center;
+		align-items: flex-end;
+	}
+	&-middle {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	&-bottom {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+}
+
+.line {
+	width: 5px;
+	height: 10rem;
+	background-color: white;
+	&-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

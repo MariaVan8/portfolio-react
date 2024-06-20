@@ -5,7 +5,7 @@
 	position: relative;
 	//width: 100vw;
 	height: 100vh;
-	background-image: url("../../assets/Images/moon.jpg");
+	background-image: url("/moon.jpg");
 	background-size: cover;
 	background-position: center;
 
@@ -45,7 +45,7 @@
 		padding-bottom: 8rem;
 		line-height: 3.5rem;
 		text-align: left;
-		letter-spacing: 5px;
+		//letter-spacing: 5px;
 	}
 
 	.first-layer {
@@ -76,6 +76,12 @@
 			font-weight: bold;
 			font-size: $font-size-xxlarge;
 			line-height: 2.5rem;
+			&-bottom {
+				font-size: $font-size-xlarge;
+				line-height: 2rem;
+				font-weight: lighter;
+				padding-top: 5px;
+			}
 		}
 		.accent {
 			color: $secondary-color;

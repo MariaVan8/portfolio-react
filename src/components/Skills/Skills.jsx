@@ -6,6 +6,7 @@ import reactIcon from "../../assets/icons/react.png";
 import angular from "../../assets/icons/angular.png";
 import vue from "../../assets/icons/vue.png";
 import DatabaseBox from "../DatabaseBox/DatabaseBox";
+import SoftSkills from "../SoftSkills/SoftSkills";
 
 function Skills() {
 	return (
@@ -46,9 +47,11 @@ function Skills() {
 						/>
 					</div>
 					<div className="skills-subtitle">Databases</div>
-					<DatabaseBox />
+					{/* <DatabaseBox /> */}
 					<div className="skills-subtitle">Cloud Services</div>
 					<Cloud />
+					<div className="skills-subtitle">Soft Skills</div>
+					<SoftSkills />
 				</div>
 			</div>
 		</>

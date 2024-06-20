@@ -17,7 +17,9 @@ function Header() {
 							<div className="second-layer_text">
 								<span className="accent">Maria </span>Revelo,
 							</div>
-							<div className="second-layer_text">fullstack developer</div>
+							<div className="second-layer_text-bottom">
+								fullstack developer
+							</div>
 						</div>
 					</div>
 					<div className="img-container">
