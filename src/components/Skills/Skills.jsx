@@ -50,8 +50,6 @@ function Skills() {
 					{/* <DatabaseBox /> */}
 					<div className="skills-subtitle">Cloud Services</div>
 					<Cloud />
-					<div className="skills-subtitle">Soft Skills</div>
-					<SoftSkills />
 				</div>
 			</div>
 		</>
