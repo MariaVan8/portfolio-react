@@ -6,16 +6,27 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 1rem;
 	z-index: 2; // Ensure the content is above the opacity layer
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 2rem;
 	padding: 0 45px;
+	&-title {
+		color: $primary-color;
+		font-family: $montserrat-alternates-regular;
+		font-size: $font-size-xlarge;
+		z-index: 2;
+		bottom: 20rem;
+		left: 45px;
+		position: relative;
+		//padding-bottom: 5rem;
+		width: 35%;
+	}
 	&-box {
 		h3 {
-			font-size: 14px;
+			font-size: $font-size-small;
 			font-family: $montserrat-alternates-bold;
 		}
 		p {
@@ -36,6 +47,10 @@
 		gap: 6rem;
 		text-align: center;
 		align-items: flex-end;
+		> :first-child {
+			position: relative;
+			bottom: 2.5rem;
+		}
 	}
 	&-middle {
 		display: flex;
@@ -45,7 +60,13 @@
 	&-bottom {
 		display: flex;
 		flex-direction: column;
-		gap: 5rem;
+		gap: 8rem;
+		position: relative;
+		top: 8rem;
+		> :first-child {
+			position: relative;
+			// bottom: 2rem;
+		}
 	}
 }
 
@@ -68,15 +89,16 @@
 }
 
 .soft_skills-background {
-	height: 38rem;
+	height: 50rem;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	position: relative;
+	background-color: #191919;
 	&-box {
 		background-image: url(../../assets/Images/g-final.png);
-		height: 30rem;
-		width: 15rem;
+		height: 42rem;
+		width: 30rem;
 		background-size: cover;
 		background-position: center;
 		overflow: hidden;
@@ -98,4 +120,21 @@
 	font-weight: 800;
 	-webkit-text-stroke-color: #a536cf;
 	-webkit-text-stroke-width: 0.4px;
+	//background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	display: block;
+}
+
+.spacer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 3rem;
+	&-line {
+		height: 10px;
+		border-bottom: 2px solid white;
+		width: 60%;
+		justify-content: center;
+		margin-top: 3rem;
+	}
 }

@@ -3,7 +3,6 @@
 
 .header {
 	position: relative;
-	//width: 100vw;
 	height: 100vh;
 	background-image: url("/moon.jpg");
 	background-size: cover;
@@ -40,12 +39,10 @@
 	.text-layer p {
 		margin: 0;
 		position: absolute;
-		//font-size: 80px;
 		width: 98%;
 		padding-bottom: 8rem;
 		line-height: 3.5rem;
 		text-align: left;
-		//letter-spacing: 5px;
 	}
 
 	.first-layer {
@@ -53,7 +50,6 @@
 		-webkit-text-stroke-width: 0.2px;
 		-webkit-text-stroke-color: white;
 		font-weight: bolder;
-		//width: 100%;
 		font-size: 70px;
 		color: transparent;
 		position: relative;
@@ -120,5 +116,6 @@
 	&_btn {
 		background-color: $secondary-color;
 		width: 200px;
+		color: $primary-color;
 	}
 }
