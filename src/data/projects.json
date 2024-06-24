@@ -1,0 +1,20 @@
+[
+	{
+		"id": "1",
+		"title": "Reel Popcorn",
+		"description": "A fun application to browse movie trailers, you can choose and see upcoming, or your favorite movies, watchlist and more",
+		"image": "src/assets/Images/popcorn.png",
+		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
+		"link": "https://reelpopcorn.mariarevelo.com",
+		"source": "https://github.com/ppragides1/react-movie-app"
+	},
+	{
+		"id": "2",
+		"title": "Reel Popcorn",
+		"description": "A fun application to browse movie trailers, you can choose and see upcoming, or your favorite movies, watchlist and more",
+		"image": "src/assets/Images/popcorn.png",
+		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
+		"link": "https://reelpopcorn.mariarevelo.com",
+		"source": "https://github.com/ppragides1/react-movie-app"
+	}
+]

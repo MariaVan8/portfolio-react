@@ -13,9 +13,9 @@ function SoftSkills() {
 							<div className="soft_skills-box">
 								<h3>Communication</h3>
 								<p>
-									I communicate clearly, fostering
-									<span className="highlight"> open </span>collaboration and
-									effective dialogue.
+									I believe in
+									<span className="highlight"> open </span>conversations to
+									build strong, collaborative relationships.
 								</p>
 							</div>
 							<div className="soft_skills-box">
