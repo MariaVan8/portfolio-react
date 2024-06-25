@@ -47,7 +47,7 @@ function Skills() {
 						/>
 					</div>
 					<div className="skills-subtitle">Databases</div>
-					{/* <DatabaseBox /> */}
+					<DatabaseBox />
 					<div className="skills-subtitle">Cloud Services</div>
 					<Cloud />
 				</div>

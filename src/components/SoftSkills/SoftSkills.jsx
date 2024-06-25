@@ -62,13 +62,6 @@ function SoftSkills() {
 									peers
 								</p>
 							</div>
-							{/* <div className="soft_skills-box">
-								<h3>Empathy</h3>
-								<p>
-									I genuinely understand and share others' feelings and
-									perspectives.
-								</p>
-							</div> */}
 						</div>
 					</div>
 				</div>

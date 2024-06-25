@@ -32,9 +32,9 @@ function Header() {
 				<div className="header_text-wrapper">
 					<p>
 						Full stack developer with a flair for crafting
-						<span>intuitive solutions</span> and a passion for continuous
+						<span> intuitive solutions</span> and a passion for continuous
 						learning. I am always eager to
-						<span>adapt and contribute positively</span> to dynamic teams.
+						<span> adapt and contribute positively</span> to dynamic teams.
 					</p>
 					<button className="header_btn">About me</button>
 				</div>

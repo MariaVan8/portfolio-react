@@ -3,18 +3,18 @@
 		"id": "1",
 		"title": "Reel Popcorn",
 		"description": "A fun application to browse movie trailers, you can choose and see upcoming, or your favorite movies, watchlist and more",
-		"image": "src/assets/Images/popcorn.png",
+		"image": "popcorn.png",
 		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
 		"link": "https://reelpopcorn.mariarevelo.com",
 		"source": "https://github.com/ppragides1/react-movie-app"
 	},
 	{
 		"id": "2",
-		"title": "Reel Popcorn",
-		"description": "A fun application to browse movie trailers, you can choose and see upcoming, or your favorite movies, watchlist and more",
-		"image": "src/assets/Images/popcorn.png",
+		"title": "Biohack UIO",
+		"description": "An educational portal highlighting Ecuador's first community lab, detailing courses, available lab equipment, and promoting an inclusive space for practical experiments.",
+		"image": "bio.png",
 		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
-		"link": "https://reelpopcorn.mariarevelo.com",
-		"source": "https://github.com/ppragides1/react-movie-app"
+		"link": "https://biohack-uio.netlify.app/",
+		"source": "https://github.com/MariaVan8/BIOHACK-Client"
 	}
 ]

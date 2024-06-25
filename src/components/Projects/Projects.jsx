@@ -14,9 +14,8 @@ function Projects() {
 						<p className="first-layer">Check out my work</p>
 						<div className="second-layer">
 							<div className="second-layer_text">Check out</div>
-							<div className="second-layer_text">my</div>
 							<div className="second-layer_text">
-								<span className="accent">work</span>.
+								my<span className="accent"> work</span>.
 							</div>
 						</div>
 					</div>
@@ -52,7 +51,7 @@ function Projects() {
 									<a
 										href={item.link}
 										target="_blank">
-										Live Site
+										Live Website
 									</a>
 									<a
 										href={item.source}
@@ -65,6 +64,9 @@ function Projects() {
 					})}
 				</div>
 			</section>
+			<div className="spacer">
+				<div className="spacer-line"></div>
+			</div>
 		</>
 	);
 }
