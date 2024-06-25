@@ -2,14 +2,19 @@
 @use "../../styles/partials/fonts" as *;
 
 .box {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
-	justify-content: space-between; /* Distribute space between columns */
-	align-content: space-between; /* Distribute space between rows */
-	gap: 0; /* Remove the gap between grid items */
-	padding: 2rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; /* Distributes space between items */
+	gap: 2rem; /* Adds space between items */
 	img {
-		width: 5rem;
-		height: 5rem;
+		background-color: white;
+		width: calc(
+			50% - 1rem
+		); /* Each image takes up 50% of the container width minus the gap */
+		//margin-bottom: 2rem; /* Adds space between rows */
+		height: auto;
+		border: 2px solid white;
+		padding: 2rem;
+		border-radius: 10px;
 	}
 }
