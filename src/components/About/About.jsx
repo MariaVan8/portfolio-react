@@ -57,6 +57,22 @@ function About() {
 					</div>
 				</Slider>
 			</section>
+			<section className="intro">
+				<p>
+					Hello, I'm Maria. Originally from Ecuador, I am now a proud Canadian
+					citizen, keen to make meaningful contributions to both countries
+					through my career in technology.
+				</p>
+				<p>
+					When I'm not immersed in coding or unraveling the mysteries of data,
+					you'll likely find me outdoors, engaging in geocaching—a modern
+					treasure hunt that satisfies my love for adventure.
+				</p>
+				<p>
+					I'm also a devoted cat mom, an avid traveler, and I cherish my Latina
+					heritage, which brings a rhythm to my life with music and dance.
+				</p>
+			</section>
 			<div className="spacer">
 				<div className="spacer-line"></div>
 			</div>

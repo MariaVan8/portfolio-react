@@ -4,14 +4,10 @@
 .box {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between; /* Distributes space between items */
-	gap: 2rem; /* Adds space between items */
+	justify-content: space-between;
+	gap: 2rem;
 	img {
-		background-color: white;
-		width: calc(
-			50% - 1rem
-		); /* Each image takes up 50% of the container width minus the gap */
-		//margin-bottom: 2rem; /* Adds space between rows */
+		width: calc(50% - 1rem);
 		height: auto;
 		border: 2px solid white;
 		padding: 2rem;

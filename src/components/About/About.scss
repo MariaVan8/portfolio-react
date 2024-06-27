@@ -26,3 +26,11 @@
 .slick-dots li.slick-active button:before {
 	color: black;
 }
+
+.intro {
+	padding: 1rem 45px;
+	margin-top: 2rem;
+	p {
+		font-family: $roc-grotesk-light;
+	}
+}
