@@ -1,2 +1,17 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/fonts" as *;
+
+.cloud {
+	&_container {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 4rem;
+	}
+	img {
+		width: calc(50% - 1rem);
+		height: auto;
+		border: 2px solid white;
+		padding: 2rem;
+		border-radius: 10px;
+	}
+}
