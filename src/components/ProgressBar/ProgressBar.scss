@@ -23,3 +23,12 @@
 		border-radius: 4px;
 	}
 }
+
+@media only screen and (min-width: 660px) {
+	.progress-bar {
+		&__icon {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}

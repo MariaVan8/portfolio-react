@@ -4,7 +4,7 @@ import "./CircularProgressBar.scss";
 
 function CircularProgressBar({ percentage, color, icon }) {
 	return (
-		<div className="circle-container">
+		<div className="circle_container">
 			<div
 				className="circle"
 				style={{

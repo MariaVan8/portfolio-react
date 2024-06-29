@@ -2,15 +2,29 @@
 @use "../../styles/partials/fonts" as *;
 
 .box {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem;
+	justify-content: space-between;
+	align-items: center;
+
 	img {
-		width: calc(50% - 1rem);
+		width: 100%; /* Make the image take the full width of the grid cell */
 		height: auto;
-		border: 2px solid white;
-		padding: 2rem;
+		border: 2px solid $secondary-color;
+		padding: 2rem; /* Adjust padding as necessary */
 		border-radius: 10px;
+	}
+}
+
+@media only screen and (min-width: 660px) {
+	.box {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2.2;
+	}
+
+	.box img {
+		//width: 16.6vw; /* Adjust size for tablets */
+		padding: 2rem;
 	}
 }

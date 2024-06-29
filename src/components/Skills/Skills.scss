@@ -63,3 +63,20 @@
 	//height: 30vh;
 	flex-direction: row;
 }
+
+@media only screen and (min-width: 660px) {
+	.skills {
+		&-container {
+			padding: 0 70px;
+		}
+		&-title {
+			font-size: $font-size-xxlarge;
+		}
+		p {
+			font-size: $font-size-large;
+		}
+		&-subtitle {
+			font-size: $font-size-xxlarge;
+		}
+	}
+}

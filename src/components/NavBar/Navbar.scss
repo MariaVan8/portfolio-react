@@ -75,3 +75,23 @@
 		}
 	}
 }
+
+@media only screen and (min-width: 660px) {
+	.nav {
+		padding-right: 50px;
+		.hamburger {
+			&_1 {
+				width: 50px;
+				height: 6px;
+			}
+			&_2 {
+				width: 30px;
+				height: 6px;
+			}
+			&_3 {
+				width: 60px;
+				height: 6px;
+			}
+		}
+	}
+}

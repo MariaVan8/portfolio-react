@@ -22,10 +22,6 @@ function DatabaseBox() {
 					src={workbench}
 					alt="workbench"
 				/>
-				{/* <img
-					src={sqlserver}
-					alt="sqlserver"
-				/> */}
 				<img
 					src={postgres}
 					alt="postgres"
