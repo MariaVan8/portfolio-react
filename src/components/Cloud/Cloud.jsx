@@ -1,6 +1,7 @@
 import "./Cloud.scss";
 import aws from "../../assets/icons/aws.png";
 import docker from "../../assets/icons/docker.png";
+import cloud from "../../assets/icons/cloud.png";
 
 function Cloud() {
 	return (
@@ -10,6 +11,11 @@ function Cloud() {
 					<img
 						src={aws}
 						alt="aws"
+					/>
+					<img
+						src={cloud}
+						alt="cloud"
+						className="hidden"
 					/>
 					<img
 						src={docker}

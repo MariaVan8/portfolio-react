@@ -6,12 +6,25 @@
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 4rem;
+		gap: 2rem;
 	}
 	img {
-		width: calc(50% - 1rem);
+		flex-grow: 1;
+		width: 20%;
 		height: auto;
-		border: 2px solid white;
+		border: 2px solid $secondary-color;
 		padding: 2rem;
 		border-radius: 10px;
+	}
+	.hidden {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 660px) {
+	.cloud {
+		.hidden {
+			display: block;
+		}
 	}
 }

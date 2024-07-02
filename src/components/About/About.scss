@@ -28,9 +28,21 @@
 }
 
 .intro {
-	padding: 1rem 45px;
+	padding: 1rem 70px;
 	margin-top: 2rem;
 	p {
 		font-family: $roc-grotesk-light;
+	}
+}
+
+@media only screen and (min-width: 660px) {
+	.slider {
+		padding: 0 135px;
+	}
+	.intro {
+		padding: 1rem 135px;
+	}
+	.slick-slide img {
+		width: 90%;
 	}
 }
