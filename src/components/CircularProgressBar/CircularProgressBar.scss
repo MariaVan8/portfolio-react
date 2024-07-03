@@ -42,3 +42,9 @@
 	font-weight: bold;
 	color: $primary-color;
 }
+
+@media only screen and (min-width: 660px) {
+	.circle-container {
+		padding: 2rem 0;
+	}
+}

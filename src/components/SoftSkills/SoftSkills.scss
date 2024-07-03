@@ -123,7 +123,6 @@
 	font-weight: 800;
 	-webkit-text-stroke-color: #a536cf;
 	-webkit-text-stroke-width: 0.4px;
-	//background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 20px;
 	display: block;
 }
@@ -139,5 +138,36 @@
 		width: 60%;
 		justify-content: center;
 		margin-top: 3rem;
+	}
+}
+
+@media only screen and (min-width: 660px) {
+	.soft_skills {
+		padding: 0 70px;
+		&-background {
+			height: 60rem;
+			&-box {
+				height: 60rem;
+				//width: 35rem;
+			}
+		}
+		&-title {
+			font-size: 40px;
+			bottom: 24rem;
+		}
+		&-box {
+			h3 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+		&-top {
+			width: 200px;
+		}
+		&-bottom {
+			width: 200px;
+		}
 	}
 }

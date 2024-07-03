@@ -40,11 +40,6 @@ function SoftSkills() {
 								<div className="line"></div>
 								<span className="soft_skills-circle"></span>
 							</div>
-							{/* <div className="line-container">
-								<span className="soft_skills-circle"></span>
-								<div className="line"></div>
-								<span className="soft_skills-circle"></span>
-							</div> */}
 						</div>
 						<div className="soft_skills-bottom">
 							<div className="soft_skills-box">

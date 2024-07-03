@@ -59,18 +59,26 @@ function About() {
 			</section>
 			<section className="intro">
 				<p>
-					Hello, I'm Maria. Originally from Ecuador, I am now a proud Canadian
-					citizen, keen to make meaningful contributions to both countries
-					through my career in technology.
+					Hello, I'm Maria. Originally from Ecuador, I bring a rich cultural
+					background and a passion for technology. I am dedicated to making
+					meaningful contributions through my career in software development.
 				</p>
 				<p>
-					When I'm not immersed in coding or unraveling the mysteries of data,
-					you'll likely find me outdoors, engaging in geocaching—a modern
-					treasure hunt that satisfies my love for adventure.
+					I thrive on solving complex problems and continuously learning new
+					skills. My commitment to excellence is reflected in my work ethic and
+					my eagerness to take on new challenges.
 				</p>
 				<p>
-					I'm also a devoted cat mom, an avid traveler, and I cherish my Latina
-					heritage, which brings a rhythm to my life with music and dance.
+					Outside of work, I find joy in nature and adventure. You'll often find
+					me outdoors, geocaching, or exploring new trails. This love for
+					exploration extends to my travels, where I immerse myself in different
+					cultures and experiences.
+				</p>
+				<p>
+					I am also a devoted cat mom and cherish my Latina heritage, which
+					enriches my life with vibrant traditions and a love for music and
+					dance. These interests keep me grounded and inspire a balanced,
+					fulfilling lifestyle.
 				</p>
 			</section>
 			<div className="spacer">

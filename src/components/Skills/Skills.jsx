@@ -25,9 +25,7 @@ function Skills() {
 						<span className="highlight"> efficient platforms.</span>
 					</p>
 					<div className="skills-subtitle">Languages</div>
-					<div className="languages">
-						<ProgressBar />
-					</div>
+					<ProgressBar />
 					<div className="skills-subtitle">Frameworks</div>
 					<div className="circle-container">
 						<CircularProgressBar

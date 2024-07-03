@@ -4,7 +4,6 @@ import data from "../../data/projects.json";
 
 function Projects() {
 	const project = data;
-	//console.log(project);
 
 	return (
 		<>

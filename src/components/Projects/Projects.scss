@@ -79,11 +79,6 @@
 		}
 	}
 
-	.second-layer p {
-		margin-top: 10px; /* Adjust spacing between lines */
-		font-size: $font-size-xlarge;
-	}
-
 	.img-container {
 		position: relative;
 		img {
@@ -164,6 +159,25 @@
 			color: $secondary-color;
 			font-weight: 400;
 			font-family: $montserrat-alternates-light;
+		}
+	}
+}
+
+@media only screen and (min-width: 660px) {
+	.projects_top {
+		height: 36vh;
+		.first-layer {
+			font-size: 150px;
+		}
+		.text-layer p {
+			line-height: 7rem;
+			top: 0rem;
+		}
+		.second-layer {
+			top: 6rem;
+			&_text {
+				font-size: 40px;
+			}
 		}
 	}
 }
