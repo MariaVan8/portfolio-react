@@ -78,11 +78,6 @@
 			color: $secondary-color;
 		}
 	}
-
-	.second-layer p {
-		margin-top: 10px; /* Adjust spacing between lines */
-		font-size: $font-size-xlarge;
-	}
 }
 
 .contact {
@@ -113,6 +108,43 @@
 		img {
 			width: 3rem;
 			height: 3rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 660px) {
+	.contact_top {
+		.first-layer {
+			font-size: 150px;
+		}
+		.second-layer {
+			padding: 0 70px;
+			bottom: 3rem;
+			top: 6rem;
+			&_text {
+				font-size: 40px;
+			}
+		}
+		.text-layer p {
+			line-height: 7rem;
+			margin: 3rem 0;
+			height: 8rem;
+			top: -1rem;
+		}
+	}
+	.contact {
+		padding: 1rem 70px;
+		&_container {
+			gap: 6rem;
+		}
+		&_socials {
+			.logos {
+				gap: 2rem;
+			}
+			img {
+				width: 4rem;
+				height: 4rem;
+			}
 		}
 	}
 }

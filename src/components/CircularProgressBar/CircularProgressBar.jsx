@@ -20,7 +20,7 @@ function CircularProgressBar({ percentage, color, icon }) {
 							className="icon"
 						/>
 					)}
-					<span className="percentage">{percentage}%</span>
+					{/* <span className="percentage">{percentage}%</span> */}
 				</div>
 			</div>
 		</div>

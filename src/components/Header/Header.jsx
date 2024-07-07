@@ -13,9 +13,9 @@ function Header() {
 						<p className="first-layer">Fullstack Developer</p>
 						<div className="second-layer">
 							<div className="second-layer_text">Hello,</div>
-							<div className="second-layer_text">I'm</div>
-							<div className="second-layer_text">
-								<span className="accent">Maria </span>Revelo,
+							<div className="second-layer_text inline">
+								<span>I'm</span> <span className="accent">Maria</span>{" "}
+								<span className="revelo"> Revelo,</span>
 							</div>
 							<div className="second-layer_text-bottom">
 								fullstack developer

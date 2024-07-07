@@ -159,6 +159,7 @@
 			color: $secondary-color;
 			font-weight: 400;
 			font-family: $montserrat-alternates-light;
+			font-size: 14px;
 		}
 	}
 }
@@ -170,13 +171,39 @@
 			font-size: 150px;
 		}
 		.text-layer p {
-			line-height: 7rem;
+			line-height: 8rem;
 			top: 0rem;
 		}
 		.second-layer {
 			top: 6rem;
+			padding: 0 70px;
 			&_text {
 				font-size: 40px;
+			}
+		}
+	}
+	.projects {
+		&_container {
+			margin-top: 6rem;
+			padding: 0 70px;
+		}
+		.project {
+			h2 {
+				font-size: 40px;
+			}
+			.description {
+				font-size: 20px;
+			}
+		}
+		.stack {
+			.tech {
+				font-size: 20px;
+			}
+		}
+		.links {
+			a {
+				padding: 0.5rem 1rem;
+				font-size: 20px;
 			}
 		}
 	}
