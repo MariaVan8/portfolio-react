@@ -38,18 +38,16 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		gap: 1rem; /* Adjust gap between flex items */
+		gap: 1rem;
 	}
 
 	.progress-bar {
 		display: flex;
 		align-items: center;
-		flex: 1 1 calc(33.33% - 1rem); /* Two columns layout */
+		flex: 1 1 calc(33.33% - 1rem);
 		margin-bottom: 1rem;
 	}
 	.languages .progress-bar:nth-last-child(-n + 2) {
-		//flex: 1 1 calc(20% - 1rem); /* Smaller size for last two items */
-		//background-color: red;
 		flex: 1 1 calc(20% - 1rem) !important;
 		margin-right: 75px;
 		margin-left: 75px;

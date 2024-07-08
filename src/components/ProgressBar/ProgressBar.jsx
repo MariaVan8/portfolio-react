@@ -12,10 +12,10 @@ const progressData = [
 	{ imgSrc: html, altText: "HTML", progress: 80 },
 	{ imgSrc: css, altText: "JavaScript", progress: 70 },
 	{ imgSrc: js, altText: "Python", progress: 60 },
-	{ imgSrc: ts, altText: "C++", progress: 55 },
+	{ imgSrc: ts, altText: "TypeScript", progress: 55 },
 	{ imgSrc: python, altText: "Android", progress: 50 },
 	{ imgSrc: cs, altText: "C#", progress: 75 },
-	{ imgSrc: sql, altText: "TypeScript", progress: 65 },
+	{ imgSrc: sql, altText: "SQL", progress: 65 },
 	{ imgSrc: swift, altText: "Swift", progress: 65 },
 ];
 

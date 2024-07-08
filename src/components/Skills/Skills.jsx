@@ -4,7 +4,7 @@ import CircularProgressBar from "../CircularProgressBar/CircularProgressBar";
 import Cloud from "../Cloud/Cloud";
 import reactIcon from "../../assets/icons/react.png";
 import angular from "../../assets/icons/angular.png";
-import vue from "../../assets/icons/vue.png";
+import net from "../../assets/icons/nett.png";
 import DatabaseBox from "../DatabaseBox/DatabaseBox";
 import SoftSkills from "../SoftSkills/SoftSkills";
 
@@ -32,16 +32,19 @@ function Skills() {
 							percentage={80}
 							color="#a536cf"
 							icon={reactIcon}
+							title={"React"}
 						/>
 						<CircularProgressBar
 							percentage={65}
 							color="#a536cf"
-							icon={angular}
+							icon={net}
+							title={".NET"}
 						/>
 						<CircularProgressBar
 							percentage={90}
 							color="#a536cf"
-							icon={vue}
+							icon={angular}
+							title={"Angular"}
 						/>
 					</div>
 					<div className="skills-subtitle">Databases</div>

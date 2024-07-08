@@ -9,8 +9,8 @@
 	align-items: center;
 
 	img {
-		width: 100%; /* Make the image take the full width of the grid cell */
-		height: auto;
+		max-width: 100%; /* Ensure the image does not exceed the grid cell's width */
+		max-height: 100%;
 		border: 2px solid $secondary-color;
 		padding: 2rem; /* Adjust padding as necessary */
 		border-radius: 10px;
@@ -26,5 +26,16 @@
 	.box img {
 		//width: 16.6vw; /* Adjust size for tablets */
 		padding: 2rem;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.box {
+		gap: 4rem;
+
+		img {
+			width: auto;
+			padding: 5rem;
+		}
 	}
 }
