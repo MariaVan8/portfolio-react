@@ -6,6 +6,7 @@ import python from "../../assets/icons/python1.png";
 import cs from "../../assets/icons/c1.png";
 import sql from "../../assets/icons/sql1.png";
 import ts from "../../assets/icons/typescript1.png";
+import swift from "../../assets/icons/swift.png";
 
 const progressData = [
 	{ imgSrc: html, altText: "HTML", progress: 80 },
@@ -13,8 +14,9 @@ const progressData = [
 	{ imgSrc: js, altText: "Python", progress: 60 },
 	{ imgSrc: ts, altText: "C++", progress: 55 },
 	{ imgSrc: python, altText: "Android", progress: 50 },
-	{ imgSrc: cs, altText: "Sass", progress: 75 },
+	{ imgSrc: cs, altText: "C#", progress: 75 },
 	{ imgSrc: sql, altText: "TypeScript", progress: 65 },
+	{ imgSrc: swift, altText: "Swift", progress: 65 },
 ];
 
 function ProgressBar() {

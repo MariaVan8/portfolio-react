@@ -197,9 +197,13 @@
 		.first-layer {
 			font-size: 12vw;
 			-webkit-text-stroke-width: 0.2px;
+			right: 20px;
 		}
 		.second-layer {
 			padding: 0;
+			&_text {
+				line-height: 5rem;
+			}
 		}
 		.text-layer {
 			transform: none;
@@ -243,7 +247,7 @@
 		}
 		&_text-wrapper {
 			margin-top: 5rem;
-			height: 30vh;
+			height: 35vh;
 			align-items: flex-start;
 			p {
 				text-align: left;
