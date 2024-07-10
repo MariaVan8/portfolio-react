@@ -3,6 +3,7 @@
 
 .skills {
 	background-color: $background-color-dark;
+
 	.spacer {
 		display: flex;
 		align-items: center;
@@ -17,7 +18,7 @@
 		}
 	}
 	&-container {
-		padding: 0 45px;
+		padding: 0 45px 3rem;
 	}
 	&-title,
 	&-subtitle {
@@ -66,7 +67,8 @@
 @media only screen and (min-width: 660px) {
 	.skills {
 		&-container {
-			padding: 0 70px;
+			padding: 0 70px 3rem;
+			margin-bottom: 3rem;
 		}
 		&-title {
 			font-size: $font-size-xxlarge;
@@ -76,6 +78,14 @@
 		}
 		&-subtitle {
 			font-size: $font-size-xxlarge;
+		}
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.skills {
+		&-container {
+			margin-bottom: 3rem;
 		}
 	}
 }

@@ -35,33 +35,200 @@
 	}
 }
 
+.about_top {
+	position: relative;
+	height: 25vh;
+	&_overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+	}
+	&_box {
+		display: flex;
+		flex-direction: column;
+		gap: 6rem;
+		align-items: center;
+		width: 100%;
+	}
+	.text-layer {
+		align-items: center;
+		//justify-content: center;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		display: flex;
+		transform: translate(-50%, 30%);
+		text-align: center;
+		color: white; /* Or any color that contrasts with your background */
+	}
+
+	.text-layer p {
+		margin: 0;
+		position: absolute;
+		width: 98%;
+		line-height: 3.5rem;
+		text-align: left;
+	}
+
+	.first-layer {
+		z-index: 2;
+		-webkit-text-stroke-width: 0.2px;
+		-webkit-text-stroke-color: white;
+		font-weight: bolder;
+		font-size: 75px;
+		color: transparent;
+		position: relative;
+		font-family: $montserrat-alternates-light;
+	}
+
+	.second-layer {
+		position: relative;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		padding: 0 45px;
+		letter-spacing: 2px;
+		&_text {
+			color: $primary-color;
+			font-family: $montserrat-alternates-bold;
+			font-weight: bold;
+			font-size: $font-size-xlarge;
+			line-height: 2.5rem;
+			&-bottom {
+				font-size: $font-size-xlarge;
+				line-height: 2rem;
+				font-weight: lighter;
+				padding-top: 5px;
+			}
+		}
+		.accent {
+			color: $secondary-color;
+		}
+	}
+}
+
 @media only screen and (min-width: 660px) {
 	.slider {
-		padding: 0 125px;
-		//margin: 4rem 0;
-	}
-	.intro {
-		padding: 1rem 70px;
-	}
-	.slick-slide img {
-		width: 90%;
-	}
-	.slick-prev:before,
-	.slick-next:before {
-		font-size: 35px;
+		.slick-slide {
+			img {
+				width: 60%;
+			}
+		}
 	}
 
-	.slick-prev {
-		left: -70px; /* Adjust this value to give space for the left arrow */
-	}
+	.projects_box {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
 
-	.slick-next {
-		right: -50px; /* Adjust this value to give space for the right arrow */
+		.text-layer {
+			text-align: center;
+			flex: 1;
+		}
 	}
 
 	.intro {
 		p {
-			font-size: 18px;
+			text-align: center;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+	}
+	// .slider {
+	// 	padding: 0 125px;
+	// 	//margin: 4rem 0;
+	// }
+	// .intro {
+	// 	padding: 1rem 70px;
+	// }
+	// .slick-slide img {
+	// 	width: 90%;
+	// }
+	// .slick-prev:before,
+	// .slick-next:before {
+	// 	font-size: 35px;
+	// }
+
+	// .slick-prev {
+	// 	left: -70px; /* Adjust this value to give space for the left arrow */
+	// }
+
+	// .slick-next {
+	// 	right: -50px; /* Adjust this value to give space for the right arrow */
+	// }
+
+	// .intro {
+	// 	p {
+	// 		font-size: 18px;
+	// 	}
+	// }
+}
+
+@media only screen and (min-width: 960px) {
+	// 	.slider {
+	// 		padding: 0 80px; // Adjust padding for desktops
+	// 	}
+	// 	.intro {
+	// 		padding: 1rem 60px;
+	// 	}
+	// 	.slick-slide img {
+	// 		width: 70%; // Adjust width for desktops
+	// 		max-width: 350px; // Adjust max-width for desktops
+	// 	}
+	// 	.slick-prev:before,
+	// 	.slick-next:before {
+	// 		font-size: 30px; // Adjust arrow size for desktops
+	// 	}
+	// 	.slick-prev {
+	// 		left: -30px; // Adjust this value for desktop view
+	// 	}
+	// 	.slick-next {
+	// 		right: -30px; // Adjust this value for desktop view
+	// 	}
+	// 	.intro p {
+	// 		font-size: 20px;
+	// 	}
+	.slider {
+		display: flex;
+		justify-content: space-between;
+
+		.slick-list {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.slick-slide {
+			display: inline-block;
+			img {
+				width: 30%;
+			}
+		}
+	}
+
+	.projects_box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		.text-layer {
+			max-width: 60%;
+			margin: 0 auto;
+		}
+	}
+
+	.intro {
+		p {
+			text-align: center;
+			max-width: 60%;
+			margin: 2rem auto;
 		}
 	}
 }

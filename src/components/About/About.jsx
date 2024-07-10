@@ -22,8 +22,10 @@ function About() {
 			<div className="spacer">
 				<div className="spacer-line"></div>
 			</div>
-			<section className="projects_top">
-				<div className="projects_box">
+			<section
+				className="about_top"
+				id="about">
+				<div className="about_box">
 					<div className="text-layer">
 						<p className="first-layer">Discover more</p>
 						<div className="second-layer">

@@ -20,7 +20,7 @@ function Cloud() {
 					<img
 						src={cloud}
 						alt="cloud"
-						className="hidden"
+						// className="hidden"
 					/>
 					<img
 						src={docker}

@@ -6,7 +6,9 @@ import github from "../../assets/icons/github.png";
 function Contact() {
 	return (
 		<>
-			<section className="contact_container">
+			<section
+				className="contact_container"
+				id="contact">
 				<section className="contact_top">
 					<div className="contact_box">
 						<div className="text-layer">

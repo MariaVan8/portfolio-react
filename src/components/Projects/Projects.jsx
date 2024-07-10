@@ -7,7 +7,9 @@ function Projects() {
 
 	return (
 		<>
-			<section className="projects_top">
+			<section
+				className="projects_top"
+				id="projects">
 				<div className="projects_box">
 					<div className="text-layer">
 						<p className="first-layer">Check out my work</p>

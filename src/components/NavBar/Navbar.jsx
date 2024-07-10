@@ -19,6 +19,10 @@ function Navbar() {
 		};
 	}, []);
 
+	const handleNavItemClick = () => {
+		setIsMenuOpen(false);
+	};
+
 	return (
 		<>
 			<nav className="nav">
@@ -35,14 +39,26 @@ function Navbar() {
 					className={`nav-box ${isMenuOpen ? "show" : "hidden"} ${
 						isDesktop ? "desktop" : ""
 					}`}>
-					<a href="">
-						<li className="nav_item">PROJECTS</li>
+					<a href="#projects">
+						<li
+							className="nav_item"
+							onClick={handleNavItemClick}>
+							PROJECTS
+						</li>
 					</a>
-					<a href="">
-						<li className="nav_item">ABOUT ME</li>
+					<a href="#about">
+						<li
+							className="nav_item"
+							onClick={handleNavItemClick}>
+							ABOUT ME
+						</li>
 					</a>
-					<a href="">
-						<li className="nav_item">CONTACT</li>
+					<a href="#contact">
+						<li
+							className="nav_item"
+							onClick={handleNavItemClick}>
+							CONTACT
+						</li>
 					</a>
 				</ul>
 			</nav>
