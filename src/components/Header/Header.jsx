@@ -14,7 +14,8 @@ function Header() {
 						<div className="second-layer">
 							<div className="second-layer_text">Hello,</div>
 							<div className="second-layer_text inline">
-								<span>I'm</span> <span className="accent">Maria</span>{" "}
+								<span className="item">I'm</span>{" "}
+								<span className="accent">Maria</span>{" "}
 								<span className="revelo"> Revelo,</span>
 							</div>
 							<div className="second-layer_text-bottom">

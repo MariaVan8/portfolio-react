@@ -40,8 +40,8 @@
 		margin: 0;
 		position: absolute;
 		width: 98%;
-		padding-bottom: 8rem;
-		line-height: 4.5rem;
+		padding-bottom: 4.5rem;
+		line-height: 5rem;
 		text-align: left;
 	}
 
@@ -67,6 +67,7 @@
 		flex-direction: column;
 		padding: 0 45px;
 		letter-spacing: 2px;
+		gap: 0.5rem;
 		&_text {
 			color: $primary-color;
 			font-family: $montserrat-alternates-bold;
@@ -88,6 +89,10 @@
 			align-items: center;
 			gap: 0.5rem; /* Adjust spacing between "I'm" and "Maria" */
 		}
+		.item {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
 	}
 
 	.second-layer p {
@@ -102,6 +107,7 @@
 			height: 175px;
 			margin: 0 auto;
 			border-radius: 50%;
+			z-index: 3;
 		}
 	}
 
