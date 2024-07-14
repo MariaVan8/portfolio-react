@@ -37,7 +37,11 @@ function Header() {
 						learning. I am always eager to
 						<span> adapt and contribute positively</span> to dynamic teams.
 					</p>
-					<button className="header_btn">About me</button>
+					<a
+						href="#about"
+						className="header_btn">
+						About me
+					</a>
 				</div>
 			</header>
 		</>

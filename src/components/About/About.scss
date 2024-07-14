@@ -6,6 +6,7 @@
 }
 .slick-slide {
 	text-align: center;
+	position: relative;
 }
 
 .slick-slide img {
@@ -116,11 +117,11 @@
 
 @media only screen and (min-width: 660px) {
 	.slider {
-		.slick-slide {
-			img {
-				width: 60%;
-			}
-		}
+		// .slick-slide {
+		// 	img {
+		// 		width: 60%;
+		// 	}
+		// }
 	}
 	.about {
 		height: 36vh;
@@ -139,4 +140,7 @@
 			}
 		}
 	}
+}
+
+@media only screen and (min-width: 960px) {
 }

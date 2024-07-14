@@ -16,7 +16,24 @@ function About() {
 		slidesToScroll: 1,
 		centerMode: true,
 		centerPadding: "60px",
+		responsive: [
+			{
+				breakpoint: 660, // Mobile view
+				settings: {
+					slidesToShow: 1,
+					centerPadding: "60px",
+				},
+			},
+			{
+				breakpoint: 1960, // Desktop view
+				settings: {
+					slidesToShow: 3,
+					centerPadding: "0px", // Adjust this to create the overlap effect
+				},
+			},
+		],
 	};
+
 	return (
 		<>
 			<div className="spacer">
