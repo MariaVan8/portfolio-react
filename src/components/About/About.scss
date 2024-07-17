@@ -117,14 +117,11 @@
 
 @media only screen and (min-width: 660px) {
 	.slider {
-		// .slick-slide {
-		// 	img {
-		// 		width: 60%;
-		// 	}
-		// }
+		padding: 0 70px;
 	}
+
 	.about {
-		height: 36vh;
+		height: 26vh;
 		.first-layer {
 			font-size: 150px;
 		}
@@ -140,7 +137,16 @@
 			}
 		}
 	}
+	.intro {
+		padding: 0 70px;
+	}
 }
 
 @media only screen and (min-width: 960px) {
+	.slider {
+		padding: 0 135px;
+	}
+	.intro {
+		padding: 0 135px;
+	}
 }
