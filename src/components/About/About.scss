@@ -132,6 +132,11 @@
 
 	.about {
 		height: 26vh;
+		&_wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 6rem;
+		}
 		.first-layer {
 			font-size: 150px;
 		}
@@ -167,13 +172,16 @@
 		width: 40%;
 	}
 	.intro {
-		padding: 0 0 0 50px;
+		padding: 0;
 		width: 40%;
 		p {
-			font-size: $font-size-large;
+			font-size: $font-size-medium;
 		}
 	}
 	.about {
+		&_wrapper {
+			gap: 0;
+		}
 		&_container {
 			display: flex;
 			flex-direction: row;
@@ -183,7 +191,8 @@
 		}
 	}
 	.slick-slide img {
-		width: 90%;
+		max-height: 100%; // Ensure images do not overflow the slider height
+		object-fit: cover;
 	}
 	.slick-prev:before {
 		left: 0;
