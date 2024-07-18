@@ -3,6 +3,8 @@
 
 .slider {
 	padding: 0 45px;
+	flex-shrink: 0; // Prevent shrinking
+	flex-grow: 1;
 }
 .slick-slide {
 	text-align: center;
@@ -144,9 +146,17 @@
 
 @media only screen and (min-width: 960px) {
 	.slider {
-		padding: 0 135px;
+		//padding: 0 135px;
+		width: 50%;
 	}
 	.intro {
-		padding: 0 135px;
+		//padding: 0 135px;
+		width: 50%;
+	}
+	.about {
+		&_container {
+			display: flex;
+			align-items: center;
+		}
 	}
 }

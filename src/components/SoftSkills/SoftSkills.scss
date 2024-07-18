@@ -179,7 +179,7 @@
 		padding: 0 135px;
 		flex-direction: column;
 		justify-content: center;
-		gap: 0;
+		gap: 2rem;
 		&-background {
 			justify-content: space-between;
 		}
@@ -187,11 +187,20 @@
 			padding-left: 135px;
 		}
 		&-box {
-			width: 50%;
+			width: 30%;
 		}
 		&-top {
 			flex-direction: row;
 			width: 100%;
+			gap: 10rem;
+			justify-content: space-between;
+			> :first-child {
+				bottom: 0;
+			}
+			> :nth-child(2) {
+				right: 12rem;
+				position: relative;
+			}
 		}
 		&-middle {
 			display: flex;
@@ -203,11 +212,17 @@
 			flex-direction: row;
 			top: 0;
 			width: 100%;
+			justify-content: end;
+			gap: 10rem;
+		}
+		&-circle {
+			width: 15px;
+			height: 15px;
 		}
 	}
 	.line {
 		height: 5px;
-		width: 300px;
+		width: 20vw;
 		&-container {
 			display: flex;
 			flex-direction: row;
