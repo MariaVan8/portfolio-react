@@ -27,15 +27,15 @@ function About() {
 			{
 				breakpoint: 960, // Desktop view
 				settings: {
-					slidesToShow: 3,
-					centerPadding: "0px", // Adjust this to create the overlap effect
+					slidesToShow: 2,
+					centerPadding: "60px", // Adjust this to create the overlap effect
 				},
 			},
 			{
-				breakpoint: 1960, // Desktop view
+				breakpoint: 1240, // Desktop view
 				settings: {
 					slidesToShow: 2,
-					centerPadding: "0px", // Adjust this to create the overlap effect
+					centerPadding: "80px", // Adjust this to create the overlap effect
 				},
 			},
 		],

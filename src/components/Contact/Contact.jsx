@@ -30,7 +30,7 @@ function Contact() {
 						<p>Or follow me :</p>
 						<div className="logos">
 							<a
-								href="https://www.linkedin.com/in/maria-revelo"
+								href="https://www.linkedin.com/in/maria-revelo/"
 								target="_blank">
 								<img
 									src={linkedin}

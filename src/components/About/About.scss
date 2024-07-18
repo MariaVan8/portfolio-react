@@ -41,6 +41,10 @@
 .about {
 	position: relative;
 	height: 25vh;
+	&_container {
+		display: flex;
+		flex-direction: column;
+	}
 	&_overlay {
 		position: absolute;
 		top: 0;
@@ -120,6 +124,10 @@
 @media only screen and (min-width: 660px) {
 	.slider {
 		padding: 0 70px;
+		//	width: 60%;
+	}
+	.slick-slide img {
+		//width: 75%;
 	}
 
 	.about {
@@ -141,22 +149,46 @@
 	}
 	.intro {
 		padding: 0 70px;
+		//width: 40%;
 	}
 }
 
 @media only screen and (min-width: 960px) {
+	.about {
+		&_container {
+			gap: 2rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 1240px) {
 	.slider {
-		//padding: 0 135px;
-		width: 50%;
+		padding: 0;
+		width: 40%;
 	}
 	.intro {
-		//padding: 0 135px;
-		width: 50%;
+		padding: 0 0 0 50px;
+		width: 40%;
+		p {
+			font-size: $font-size-large;
+		}
 	}
 	.about {
 		&_container {
 			display: flex;
+			flex-direction: row;
 			align-items: center;
+			padding: 0 70px;
+			gap: 4rem;
 		}
+	}
+	.slick-slide img {
+		width: 90%;
+	}
+	.slick-prev:before {
+		left: 0;
+	}
+	.slick-next:before {
+		left: 5;
 	}
 }
