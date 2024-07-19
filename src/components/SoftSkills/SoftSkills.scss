@@ -191,14 +191,15 @@
 		}
 		&-top {
 			flex-direction: row;
-			width: 100%;
-			gap: 10rem;
+			width: 80%;
+			gap: 5rem;
 			justify-content: space-between;
 			> :first-child {
 				bottom: 0;
+				left: -5rem;
 			}
 			> :nth-child(2) {
-				right: 12rem;
+				left: -6rem;
 				position: relative;
 			}
 		}
@@ -212,8 +213,15 @@
 			flex-direction: row;
 			top: 0;
 			width: 80%;
-			justify-content: center;
+			justify-content: space-between;
 			gap: 10rem;
+			> :first-child {
+				left: 8rem;
+			}
+			> :last-child {
+				left: 4rem;
+				position: relative;
+			}
 		}
 		&-circle {
 			width: 15px;
@@ -222,12 +230,45 @@
 	}
 	.line {
 		height: 5px;
-		width: 20vw;
+		width: 22vw;
 		&-container {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			justify-content: flex-start;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.soft_skills {
+		padding-top: 3rem;
+		gap: 4rem;
+		&-box {
+			width: 300px;
+			h3 {
+				font-size: 24px;
+			}
+			p {
+				font-size: 20px;
+			}
+		}
+		&-top {
+			//	background-color: red;
+			right: 4rem;
+			position: relative;
+			> :first-child {
+				//left: -3rem;
+			}
+			> :nth-child(2) {
+				left: -20rem;
+				position: relative;
+			}
+		}
+		&-bottom {
+			> :first-child {
+				left: 15rem;
+			}
 		}
 	}
 }

@@ -46,9 +46,9 @@ function About() {
 				},
 			},
 			{
-				breakpoint: 2600, // Large desktop view
+				breakpoint: 3600, // Large desktop view
 				settings: {
-					slidesToShow: 4,
+					slidesToShow: 2,
 					centerPadding: "90px",
 				},
 			},
