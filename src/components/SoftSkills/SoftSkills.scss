@@ -148,7 +148,6 @@
 			height: 60rem;
 			&-box {
 				height: 60rem;
-				//width: 35rem;
 			}
 		}
 		&-title {
@@ -184,7 +183,7 @@
 			justify-content: space-between;
 		}
 		&-title {
-			padding-left: 70px;
+			padding-left: 135px;
 		}
 		&-box {
 			width: 200px;
@@ -219,7 +218,7 @@
 				left: 8rem;
 			}
 			> :last-child {
-				left: 4rem;
+				left: 8rem;
 				position: relative;
 			}
 		}
@@ -238,12 +237,18 @@
 			justify-content: flex-start;
 		}
 	}
+	.intro {
+		padding: 0 135px;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
 	.soft_skills {
-		padding-top: 3rem;
+		padding: 3rem 135px 0;
 		gap: 4rem;
+		&-background-box {
+			height: 45rem;
+		}
 		&-box {
 			width: 300px;
 			h3 {
@@ -254,14 +259,12 @@
 			}
 		}
 		&-top {
-			//	background-color: red;
 			right: 4rem;
 			position: relative;
 			> :first-child {
-				//left: -3rem;
 			}
 			> :nth-child(2) {
-				left: -20rem;
+				left: -3rem;
 				position: relative;
 			}
 		}
@@ -269,6 +272,9 @@
 			> :first-child {
 				left: 15rem;
 			}
+		}
+		.intro {
+			padding: 0 135px;
 		}
 	}
 }

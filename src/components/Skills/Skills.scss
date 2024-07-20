@@ -67,7 +67,7 @@
 @media only screen and (min-width: 660px) {
 	.skills {
 		&-container {
-			padding: 0 70px 3rem;
+			padding: 0 70px 6rem;
 			margin-bottom: 3rem;
 		}
 		&-title {
@@ -85,7 +85,15 @@
 @media only screen and (min-width: 960px) {
 	.skills {
 		&-container {
-			margin-bottom: 3rem;
+			margin-bottom: 6rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.skills {
+		&-container {
+			padding: 0 135px 8rem;
 		}
 	}
 }
