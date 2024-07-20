@@ -170,6 +170,10 @@
 		&-bottom {
 			width: 200px;
 		}
+		&-circle {
+			width: 15px;
+			height: 15px;
+		}
 	}
 }
 
@@ -246,6 +250,14 @@
 	.soft_skills {
 		padding: 3rem 135px 0;
 		gap: 4rem;
+		display: flex;
+		align-items: flex-start;
+		> :first-child {
+			margin-right: auto;
+		}
+		> :nth-child(3) {
+			margin-left: auto;
+		}
 		&-background-box {
 			height: 45rem;
 		}
@@ -259,19 +271,32 @@
 			}
 		}
 		&-top {
-			right: 4rem;
+			width: 75%;
+			justify-content: space-between;
 			position: relative;
 			> :first-child {
+				left: 0;
 			}
 			> :nth-child(2) {
-				left: -3rem;
+				left: 0;
 				position: relative;
 			}
 		}
 		&-bottom {
+			width: 75%;
+			justify-content: space-between;
+			position: relative;
 			> :first-child {
-				left: 15rem;
+				left: 0;
 			}
+			> :nth-child(2) {
+				left: 0;
+				position: relative;
+			}
+		}
+		&-circle {
+			width: 20px;
+			height: 20px;
 		}
 		.intro {
 			padding: 0 135px;
