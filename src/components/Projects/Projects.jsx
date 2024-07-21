@@ -60,6 +60,29 @@ function Projects() {
 										Source code
 									</a>
 								</div>
+								<div className="details">
+									<div className="details-wrapper">
+										<h3>Challenges</h3>
+										<p className="challenge">{item.challenge}</p>
+									</div>
+									<div className="details-wrapper">
+										<h3>Solutions</h3>
+										<p className="solution">{item.solution}</p>
+									</div>
+									<div className="details-wrapper">
+										<h3>Learning Outcome</h3>
+										<div className="outcome">
+											{Array.isArray(item.learning) &&
+												item.learning.map((learn, index) => (
+													<span
+														key={index}
+														className="learn">
+														{learn}
+													</span>
+												))}
+										</div>
+									</div>
+								</div>
 							</div>
 						);
 					})}

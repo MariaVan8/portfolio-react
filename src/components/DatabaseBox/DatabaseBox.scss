@@ -34,7 +34,16 @@
 
 		img {
 			width: auto;
-			//padding: 5rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 1240px) {
+	.box {
+		gap: 10rem;
+
+		img {
+			padding: 2rem;
 		}
 	}
 }

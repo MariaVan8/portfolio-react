@@ -3,6 +3,12 @@
 		"id": "1",
 		"title": "Reel Popcorn",
 		"description": "A fun application to browse movie trailers, you can choose and see upcoming, or your favorite movies, watchlist and more",
+		"challenge": "Managing State Across Multiple Components: The project required calling a movie API and using the fetched data across various components. Managing state and passing props down through multiple levels of components became cumbersome and led to 'prop drilling,' making the code harder to maintain and debug.",
+		"solution": "Using Context API for State Management: To avoid prop drilling and manage state more efficiently, I used React's Context API. By creating a context for the movie data, I could provide the state to all components that needed it without passing props through intermediate components.",
+		"learning": [
+			"Improved understanding of state management in React using the Context API.",
+			"Gained experience in creating more maintainable and scalable code by avoiding prop drilling."
+		],
 		"image": "popcorn.png",
 		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
 		"link": "https://reelpopcorn.mariarevelo.com",
@@ -12,6 +18,12 @@
 		"id": "2",
 		"title": "Biohack UIO",
 		"description": "An educational portal highlighting Ecuador's first community lab, detailing courses, available lab equipment, and promoting an inclusive space for practical experiments.",
+		"challenge": "Handling Multiple Components and Information: The project involved creating an educational portal with numerous components and a large amount of information, which made it challenging to maintain a clean and responsive design.",
+		"solution": "Component Breakdown and Media Queries: To address this, I broke down the components into smaller, manageable parts and used media queries to ensure the portal was fully responsive across different devices.",
+		"learning": [
+			"Enhanced skills in creating responsive designs using media queries.",
+			"Improved ability to manage complex projects by breaking down components for better maintainability."
+		],
 		"image": "bio.png",
 		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
 		"link": "https://biohack-uio.netlify.app/",
