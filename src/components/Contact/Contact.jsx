@@ -1,9 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.scss";
 import linkedin from "../../assets/icons/linkedin.png";
 import github from "../../assets/icons/github.png";
 
 function Contact() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const openModal = () => {
+		setIsModalOpen(true);
+	};
+	const closeModal = () => {
+		setIsModalOpen(false);
+	};
+
+	const handleOutsideClick = (event) => {
+		if (event.target.is === "myModal") {
+			closeModal();
+		}
+	};
+
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		const formData = new FormData(event.target);
+
+		fetch("api/send-email", {
+			method: "POST",
+			body: JSON.stringify({
+				name: formData.get("name"),
+				email: formData.get("email"),
+				message: formData.get("message"),
+			}),
+			headers: {
+				"Content-Type": "application/json",
+			},
+		})
+			.then((response) => response.json())
+			.then((data) => {
+				alert("Email sent succossfully!");
+				closeModal();
+			})
+			.catch((error) => {
+				console.error("Error", error);
+				alert("Failed to send email.");
+			});
+	};
+
 	return (
 		<>
 			<section
@@ -24,7 +64,51 @@ function Contact() {
 				</section>
 				<section className="contact">
 					<div className="contact_box">
-						<button>Contact me</button>
+						<button
+							className="modal_btn"
+							onClick={openModal}>
+							Contact me
+						</button>
+						{isModalOpen && (
+							<div
+								id="myModal"
+								className="modal"
+								onClick={handleOutsideClick}>
+								<div className="modal-content">
+									<span
+										className="close"
+										onClick={closeModal}>
+										&times;
+									</span>
+									<form
+										id="contactForm"
+										onSubmit={handleSubmit}>
+										<label
+											className="modal_text"
+											htmlFor="name">
+											Name:
+										</label>
+										<input type="text" />
+										<label
+											className="modal_text"
+											htmlFor="name">
+											Email:
+										</label>
+										<input type="text" />
+										<label
+											htmlFor="message"
+											className="modal_text">
+											Message:
+										</label>
+										<textarea
+											id="message"
+											name="message"
+											required></textarea>
+										<button type="submit">Submit</button>
+									</form>
+								</div>
+							</div>
+						)}
 					</div>
 					<div className="contact_socials">
 						<p>Or follow me :</p>
