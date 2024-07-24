@@ -13,7 +13,7 @@ function Contact() {
 	};
 
 	const handleOutsideClick = (event) => {
-		if (event.target.is === "myModal") {
+		if (event.target.id === "myModal") {
 			closeModal();
 		}
 	};
@@ -22,7 +22,7 @@ function Contact() {
 		event.preventDefault();
 		const formData = new FormData(event.target);
 
-		fetch("api/send-email", {
+		fetch("http://localhost:3000/api/send-email", {
 			method: "POST",
 			body: JSON.stringify({
 				name: formData.get("name"),
@@ -35,7 +35,7 @@ function Contact() {
 		})
 			.then((response) => response.json())
 			.then((data) => {
-				alert("Email sent succossfully!");
+				alert("Email sent successfully!");
 				closeModal();
 			})
 			.catch((error) => {
@@ -88,13 +88,21 @@ function Contact() {
 											htmlFor="name">
 											Name:
 										</label>
-										<input type="text" />
+										<input
+											type="text"
+											name="name"
+											required
+										/>
 										<label
 											className="modal_text"
 											htmlFor="name">
 											Email:
 										</label>
-										<input type="text" />
+										<input
+											type="email"
+											name="email"
+											required
+										/>
 										<label
 											htmlFor="message"
 											className="modal_text">
