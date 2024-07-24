@@ -83,6 +83,10 @@ function Contact() {
 									<form
 										id="contactForm"
 										onSubmit={handleSubmit}>
+										<p>
+											Feel free to contact me for any inquiries or projects. I
+											am always happy to connect!
+										</p>
 										<label
 											className="modal_text"
 											htmlFor="name">
@@ -112,7 +116,11 @@ function Contact() {
 											id="message"
 											name="message"
 											required></textarea>
-										<button type="submit">Submit</button>
+										<button
+											type="submit"
+											className="modal_btn">
+											Submit
+										</button>
 									</form>
 								</div>
 							</div>
