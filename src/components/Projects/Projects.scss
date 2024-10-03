@@ -1,6 +1,10 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/fonts" as *;
 
+#projects-section {
+	background-color: #242424;
+}
+
 .projects_top {
 	position: relative;
 	height: 25vh;
@@ -229,11 +233,38 @@
 	.projects {
 		&_container {
 			margin-top: 0;
+			justify-content: flex-start;
+			padding: 0 135px;
+			gap: 4rem;
 		}
 		&_top {
 			.text-layer p {
 				width: 75%;
 			}
+		}
+		.links {
+			justify-content: flex-start;
+			gap: 2rem;
+		}
+		.project {
+			&_box {
+				display: flex;
+				gap: 8rem;
+				align-items: center;
+			}
+			&_wrapper {
+				width: 50%;
+				img {
+					height: 30rem;
+					width: 35rem;
+				}
+			}
+			.details {
+				width: 50%;
+			}
+		}
+		.stack {
+			padding: 2rem 0;
 		}
 	}
 }

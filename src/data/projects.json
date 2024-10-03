@@ -28,5 +28,20 @@
 		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
 		"link": "https://biohack-uio.netlify.app/",
 		"source": "https://github.com/MariaVan8/BIOHACK-Client"
+	},
+	{
+		"id": "3",
+		"title": "GeoFlag",
+		"description": "A fun JavaScript, HTML, and CSS game with two levels of difficulty: easy and hard. In easy mode, the player guesses the country when a flag is shown on the screen, choosing from four options, with only one being correct. In hard mode, the player must also guess the capital.",
+		"challenge": "Creating a Responsive and Engaging Game: The project was built using plain JavaScript, and making it fully responsive across different devices was challenging. Keeping track of the game state, score, and managing different difficulty levels using plain JavaScript added complexity.",
+		"solution": "Modular Code Organization and Responsive Design: To maintain the organization of the codebase, I modularized different functions and components of the game, which helped in making the logic clearer and easier to maintain. Used CSS media queries to ensure the game remained responsive and visually appealing on all devices.",
+		"learning": [
+			"Gained experience in organizing JavaScript code to maintain clarity and efficiency.",
+			"Enhanced understanding of creating responsive layouts using CSS for a consistent user experience across devices."
+		],
+		"image": "popcorn.png",
+		"stack": ["JavaScript", "HTML", "CSS"],
+		"link": "https://geoflag.mariarevelo.com/",
+		"source": "https://github.com/MariaVan8/MatchQuest"
 	}
 ]

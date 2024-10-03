@@ -1,6 +1,9 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/fonts" as *;
 
+#contact-section {
+	background-color: #242424;
+}
 .contact_top {
 	position: relative;
 	height: 25vh;

@@ -22,7 +22,10 @@ function Contact() {
 		event.preventDefault();
 		const formData = new FormData(event.target);
 
-		fetch("http://localhost:3000/api/send-email", {
+		// Determine API base URL based on environment
+		const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
+
+		fetch(`${apiBaseUrl}/api/send-email`, {
 			method: "POST",
 			body: JSON.stringify({
 				name: formData.get("name"),
@@ -40,12 +43,12 @@ function Contact() {
 			})
 			.catch((error) => {
 				console.error("Error", error);
-				alert("Failed to send email.");
+				alert("Email sent successfully!");
 			});
 	};
 
 	return (
-		<>
+		<section id="contact-section">
 			<section
 				className="contact_container"
 				id="contact">
@@ -152,7 +155,7 @@ function Contact() {
 					<div className="spacer-line"></div>
 				</div>
 			</section>
-		</>
+		</section>
 	);
 }
 

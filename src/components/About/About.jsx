@@ -56,7 +56,7 @@ function About() {
 	};
 
 	return (
-		<>
+		<section id="about-section">
 			<div className="spacer">
 				<div className="spacer-line"></div>
 			</div>
@@ -129,7 +129,7 @@ function About() {
 			<div className="spacer">
 				<div className="spacer-line"></div>
 			</div>
-		</>
+		</section>
 	);
 }
 
