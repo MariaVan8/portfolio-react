@@ -3,43 +3,43 @@
 		"id": "1",
 		"title": "Reel Popcorn",
 		"description": "A fun application to browse movie trailers, you can choose and see upcoming, or your favorite movies, watchlist and more",
-		"challenge": "Managing State Across Multiple Components: The project required calling a movie API and using the fetched data across various components. Managing state and passing props down through multiple levels of components became cumbersome and led to 'prop drilling,' making the code harder to maintain and debug.",
-		"solution": "Using Context API for State Management: To avoid prop drilling and manage state more efficiently, I used React's Context API. By creating a context for the movie data, I could provide the state to all components that needed it without passing props through intermediate components.",
+		"challenge": "The project required calling a movie API and using the fetched data across various components. Managing state and passing props down through multiple levels of components became cumbersome and led to 'prop drilling,' making the code harder to maintain and debug.",
+		"solution": "To avoid prop drilling and manage state more efficiently, I used React's Context API. By creating a context for the movie data, I could provide the state to all components that needed it without passing props through intermediate components.",
 		"learning": [
 			"Improved understanding of state management in React using the Context API.",
 			"Gained experience in creating more maintainable and scalable code by avoiding prop drilling."
 		],
-		"image": "popcorn.png",
+		"images": ["vulcan-mobile.png", "vulcan-tablet.png", "popcorn-desktop.png"],
 		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
 		"link": "https://reelpopcorn.mariarevelo.com",
 		"source": "https://github.com/MariaVan8/reelpopcorn"
 	},
 	{
 		"id": "2",
-		"title": "Biohack UIO",
-		"description": "An educational portal highlighting Ecuador's first community lab, detailing courses, available lab equipment, and promoting an inclusive space for practical experiments.",
-		"challenge": "Handling Multiple Components and Information: The project involved creating an educational portal with numerous components and a large amount of information, which made it challenging to maintain a clean and responsive design.",
-		"solution": "Component Breakdown and Media Queries: To address this, I broke down the components into smaller, manageable parts and used media queries to ensure the portal was fully responsive across different devices.",
+		"title": "Vulcan",
+		"description": "A website that sells industrial products, following mockups and ensuring responsive designs across all devices.",
+		"challenge": "Working with different components and media queries that changed significantly across devices.",
+		"solution": "Using multiple tools to figure out colors and a simulator to see how things looked on different devices. Employed media queries and GULP to handle responsiveness efficiently.",
 		"learning": [
-			"Enhanced skills in creating responsive designs using media queries.",
-			"Improved ability to manage complex projects by breaking down components for better maintainability."
+			"Mastered responsive design by implementing media queries for mobile, tablet, and laptop views.",
+			"Gained experience with GULP for task automation, SASS for styling, and ensuring the project is scalable across devices."
 		],
-		"image": "bio.png",
-		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
-		"link": "https://biohack-uio.netlify.app/",
-		"source": "https://github.com/MariaVan8/BIOHACK-Client"
+		"images": ["vulcan-mobile.png", "vulcan-tablet.png", "popcorn-desktop.png"],
+		"stack": ["GULP", "HTML", "SASS", "Javascript"],
+		"link": "https://vulcan.mariarevelo.com",
+		"source": "https://github.com/MariaVan8/vulcan"
 	},
 	{
 		"id": "3",
 		"title": "GeoFlag",
 		"description": "A fun JavaScript, HTML, and CSS game with two levels of difficulty: easy and hard. In easy mode, the player guesses the country when a flag is shown on the screen, choosing from four options, with only one being correct. In hard mode, the player must also guess the capital.",
-		"challenge": "Creating a Responsive and Engaging Game: The project was built using plain JavaScript, and making it fully responsive across different devices was challenging. Keeping track of the game state, score, and managing different difficulty levels using plain JavaScript added complexity.",
-		"solution": "Modular Code Organization and Responsive Design: To maintain the organization of the codebase, I modularized different functions and components of the game, which helped in making the logic clearer and easier to maintain. Used CSS media queries to ensure the game remained responsive and visually appealing on all devices.",
+		"challenge": "The project was built using plain JavaScript, and making it fully responsive across different devices was challenging. Keeping track of the game state, score, and managing different difficulty levels using plain JavaScript added complexity.",
+		"solution": "To maintain the organization of the codebase, I modularized different functions and components of the game, which helped in making the logic clearer and easier to maintain. Used CSS media queries to ensure the game remained responsive and visually appealing on all devices.",
 		"learning": [
 			"Gained experience in organizing JavaScript code to maintain clarity and efficiency.",
 			"Enhanced understanding of creating responsive layouts using CSS for a consistent user experience across devices."
 		],
-		"image": "popcorn.png",
+		"images": ["flag-mobile.png", "flag-tablet.png", "popcorn-desktop.png"],
 		"stack": ["JavaScript", "HTML", "CSS"],
 		"link": "https://geoflag.mariarevelo.com/",
 		"source": "https://github.com/MariaVan8/MatchQuest"

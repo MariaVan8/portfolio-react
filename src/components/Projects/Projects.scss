@@ -1,7 +1,7 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/fonts" as *;
 
-#projects-section {
+#project-section {
 	background-color: #242424;
 }
 
@@ -126,7 +126,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		width: 100%; // Set maximum height
+		width: 100%;
 
 		h2 {
 			color: white;
@@ -134,7 +134,21 @@
 			font-weight: 400;
 			font-size: $font-size-xlarge;
 		}
-		img {
+		&_image {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+		}
+		.mock-mobile {
+			width: 10rem;
+			height: 16rem;
+		}
+		.mock-tablet {
+			width: 15rem;
+			height: 18rem;
+		}
+		.mock-desktop {
 			width: 19rem;
 			height: 15rem;
 		}
@@ -181,6 +195,10 @@
 			flex-direction: column;
 			gap: 1rem;
 		}
+		.learn {
+			color: $primary-color;
+			font-family: $roc-grotesk-light;
+		}
 	}
 }
 
@@ -213,6 +231,23 @@
 			}
 			.description {
 				font-size: 20px;
+			}
+			&_image {
+				flex-direction: row;
+				align-items: baseline;
+				margin-bottom: 3rem;
+			}
+			.mock-mobile {
+				width: 10rem;
+				height: 14rem;
+			}
+			.mock-tablet {
+				width: 15rem;
+				height: 18rem;
+			}
+			.mock-desktop {
+				width: 19rem;
+				height: 15rem;
 			}
 		}
 		.stack {
@@ -249,11 +284,11 @@
 		.project {
 			&_box {
 				display: flex;
-				gap: 8rem;
+				gap: 2rem;
 				align-items: center;
 			}
 			&_wrapper {
-				width: 50%;
+				width: 65%;
 				img {
 					height: 30rem;
 					width: 35rem;

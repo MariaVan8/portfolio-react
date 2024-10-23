@@ -28,6 +28,7 @@
 		h3 {
 			font-size: 13px;
 			font-family: $montserrat-alternates-bold;
+			color: $primary-color;
 		}
 		p {
 			font-size: 12.5px;
@@ -132,7 +133,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 3rem;
+	padding-bottom: 3rem;
+	background-color: #242424;
 	&-line {
 		height: 10px;
 		border-bottom: 2px solid white;

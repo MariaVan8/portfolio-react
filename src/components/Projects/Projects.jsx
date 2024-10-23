@@ -33,11 +33,25 @@ function Projects() {
 								<div className="project_box">
 									<div className="project_wrapper">
 										<div className="project_image">
-											<img
-												src={item.image}
-												alt={item.title}
-											/>
+											{Array.isArray(item.images) &&
+												item.images.map((image, index) => {
+													const classNames = [
+														"mock-mobile",
+														"mock-tablet",
+														"mock-desktop",
+													];
+
+													return (
+														<img
+															key={index}
+															src={image}
+															alt={`${item.title} - view ${index + 1}`}
+															className={classNames[index] || ""}
+														/>
+													);
+												})}
 										</div>
+
 										<div className="description">{item.description}</div>
 										<div className="stack">
 											{Array.isArray(item.stack) &&
