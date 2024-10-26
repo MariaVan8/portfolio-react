@@ -9,7 +9,7 @@
 			"Improved understanding of state management in React using the Context API.",
 			"Gained experience in creating more maintainable and scalable code by avoiding prop drilling."
 		],
-		"images": ["vulcan-mobile.png", "vulcan-tablet.png", "popcorn-desktop.png"],
+		"images": ["vulcan-mobile.png", "vulcan-tablet.png", "vulcan-desktop.png"],
 		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
 		"link": "https://reelpopcorn.mariarevelo.com",
 		"source": "https://github.com/MariaVan8/reelpopcorn"
@@ -24,7 +24,7 @@
 			"Mastered responsive design by implementing media queries for mobile, tablet, and laptop views.",
 			"Gained experience with GULP for task automation, SASS for styling, and ensuring the project is scalable across devices."
 		],
-		"images": ["vulcan-mobile.png", "vulcan-tablet.png", "popcorn-desktop.png"],
+		"images": ["vulcan-mobile.png", "vulcan-tablet.png", "vulcan-desktop.png"],
 		"stack": ["GULP", "HTML", "SASS", "Javascript"],
 		"link": "https://vulcan.mariarevelo.com",
 		"source": "https://github.com/MariaVan8/vulcan"
@@ -39,7 +39,7 @@
 			"Gained experience in organizing JavaScript code to maintain clarity and efficiency.",
 			"Enhanced understanding of creating responsive layouts using CSS for a consistent user experience across devices."
 		],
-		"images": ["flag-mobile.png", "flag-tablet.png", "popcorn-desktop.png"],
+		"images": ["flag-mobile.png", "flag-tablet.png", "vulcan-desktop.png"],
 		"stack": ["JavaScript", "HTML", "CSS"],
 		"link": "https://geoflag.mariarevelo.com/",
 		"source": "https://github.com/MariaVan8/MatchQuest"

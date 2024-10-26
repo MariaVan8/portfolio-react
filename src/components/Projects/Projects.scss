@@ -136,21 +136,23 @@
 		}
 		&_image {
 			display: flex;
-			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
 			align-items: center;
+			margin-bottom: 3rem;
 			gap: 2rem;
 		}
 		.mock-mobile {
-			width: 10rem;
-			height: 16rem;
+			width: 5rem;
+			height: 7rem;
 		}
 		.mock-tablet {
-			width: 15rem;
-			height: 18rem;
+			width: 10rem;
+			height: 12rem;
 		}
 		.mock-desktop {
-			width: 19rem;
-			height: 15rem;
+			width: 18rem;
+			height: 12rem;
 		}
 		.description {
 			color: $primary-color;
@@ -275,6 +277,9 @@
 		&_top {
 			.text-layer p {
 				width: 75%;
+			}
+			.second-layer {
+				padding: 0 135px;
 			}
 		}
 		.links {
