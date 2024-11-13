@@ -5,9 +5,11 @@ import github from "../../assets/icons/github.png";
 
 function Contact() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
+
 	const openModal = () => {
 		setIsModalOpen(true);
 	};
+
 	const closeModal = () => {
 		setIsModalOpen(false);
 	};
@@ -18,33 +20,37 @@ function Contact() {
 		}
 	};
 
-	const handleSubmit = (event) => {
-		event.preventDefault();
-		const formData = new FormData(event.target);
+	const handleSubmit = async (e) => {
+		e.preventDefault();
 
-		// Determine API base URL based on environment
-		const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
+		// Collect form data
+		const formData = {
+			name: e.target.name.value,
+			email: e.target.email.value,
+			message: e.target.message.value,
+		};
 
-		fetch(`${apiBaseUrl}/api/send-email`, {
-			method: "POST",
-			body: JSON.stringify({
-				name: formData.get("name"),
-				email: formData.get("email"),
-				message: formData.get("message"),
-			}),
-			headers: {
-				"Content-Type": "application/json",
-			},
-		})
-			.then((response) => response.json())
-			.then((data) => {
-				alert("Email sent successfully!");
-				closeModal();
-			})
-			.catch((error) => {
-				console.error("Error", error);
-				alert("Email sent successfully!");
+		try {
+			// Send data to serverless endpoint
+			const response = await fetch("YOUR_SERVERLESS_ENDPOINT_URL", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(formData),
 			});
+
+			// Handle response
+			if (response.ok) {
+				alert("Message sent successfully!");
+				e.target.reset(); // Reset form after submission
+			} else {
+				alert("Failed to send message. Please try again later.");
+			}
+		} catch (error) {
+			console.error("Error submitting form:", error);
+			alert("An error occurred. Please try again later.");
+		}
 	};
 
 	return (
@@ -102,7 +108,7 @@ function Contact() {
 										/>
 										<label
 											className="modal_text"
-											htmlFor="name">
+											htmlFor="email">
 											Email:
 										</label>
 										<input
@@ -134,7 +140,8 @@ function Contact() {
 						<div className="logos">
 							<a
 								href="https://www.linkedin.com/in/maria-revelo/"
-								target="_blank">
+								target="_blank"
+								rel="noopener noreferrer">
 								<img
 									src={linkedin}
 									alt="linkedin"
@@ -142,7 +149,8 @@ function Contact() {
 							</a>
 							<a
 								href="https://github.com/MariaVan8"
-								target="_blank">
+								target="_blank"
+								rel="noopener noreferrer">
 								<img
 									src={github}
 									alt="github"
