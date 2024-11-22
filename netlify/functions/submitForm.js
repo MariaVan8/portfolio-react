@@ -20,7 +20,7 @@ exports.handler = async (event) => {
 			headers: {
 				"Access-Control-Allow-Origin": "https://mariarevelo.com", // Replace with your frontend domain
 				"Access-Control-Allow-Headers": "Content-Type",
-				"Access-Control-Allow-mETHODs": "POST,OPTIONS",
+				"Access-Control-Allow-Methods": "POST,OPTIONS",
 			},
 			body: "OK",
 		};
