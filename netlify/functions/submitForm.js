@@ -9,7 +9,10 @@ exports.handler = async (event) => {
 	if (event.httpMethod !== "POST") {
 		return {
 			statusCode: 405,
-			headers: { Allow: "POST" },
+			headers: {
+				"Access-Control-Allow-Origin": "https://mariarevelo.com", // Replace with your frontend domain
+				"Access-Control-Allow-Headers": "Content-Type",
+			},
 			body: JSON.stringify({ error: "Method Not Allowed" }),
 		};
 	}
@@ -32,7 +35,7 @@ exports.handler = async (event) => {
 		return {
 			statusCode: 200,
 			headers: {
-				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Origin": "https://mariarevelo.com", // Frontend domain
 				"Access-Control-Allow-Headers": "Content-Type",
 			},
 			body: JSON.stringify({ message: "Message sent successfully!" }),
@@ -43,7 +46,7 @@ exports.handler = async (event) => {
 		return {
 			statusCode: 500,
 			headers: {
-				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Origin": "https://mariarevelo.com", // Frontend domain
 				"Access-Control-Allow-Headers": "Content-Type",
 			},
 			body: JSON.stringify({ error: "Failed to send message." }),
