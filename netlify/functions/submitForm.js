@@ -6,9 +6,11 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 // Log the status of the API key to verify it's loaded
 console.log(
-	"SendGrid API Key:",
-	process.env.SENDGRID_API_KEY ? "Loaded" : "Not loaded"
+	"SendGrid API Key Loaded:",
+	process.env.SENDGRID_API_KEY ? "Yes" : "No"
 );
+console.log("Receiving Email:", process.env.RECEIVING_EMAIL);
+console.log("Sender Email:", process.env.SENDER_EMAIL);
 
 exports.handler = async (event) => {
 	// Check for POST request
@@ -21,6 +23,16 @@ exports.handler = async (event) => {
 				"Access-Control-Allow-mETHODs": "POST,OPTIONS",
 			},
 			body: "OK",
+		};
+	}
+
+	if (event.httpMethod !== "POST") {
+		return {
+			statusCode: 405,
+			headers: {
+				"Access-Control-Allow-Origin": "https://mariarevelo.com", // Replace with your frontend domain
+			},
+			body: JSON.stringify({ error: "Method Not Allowed" }),
 		};
 	}
 
