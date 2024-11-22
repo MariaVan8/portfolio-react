@@ -32,13 +32,16 @@ function Contact() {
 
 		try {
 			// Send data to serverless endpoint
-			const response = await fetch("YOUR_SERVERLESS_ENDPOINT_URL", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(formData),
-			});
+			const response = await fetch(
+				"https://mariarevelo.netlify.app/.netlify/functions/submitForm",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(formData),
+				}
+			);
 
 			// Handle response
 			if (response.ok) {
