@@ -6,14 +6,15 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 exports.handler = async (event) => {
 	// Check for POST request
-	if (event.httpMethod !== "POST") {
+	if (event.httpMethod !== "OPTIONS") {
 		return {
-			statusCode: 405,
+			statusCode: 200,
 			headers: {
 				"Access-Control-Allow-Origin": "https://mariarevelo.com", // Replace with your frontend domain
 				"Access-Control-Allow-Headers": "Content-Type",
+				"Access-Control-Allow-mETHODs": "POST,OPTIONS",
 			},
-			body: JSON.stringify({ error: "Method Not Allowed" }),
+			body: "OK",
 		};
 	}
 
