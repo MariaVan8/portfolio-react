@@ -4,6 +4,12 @@ require("dotenv").config();
 const sendgrid = require("@sendgrid/mail");
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
+// Log the status of the API key to verify it's loaded
+console.log(
+	"SendGrid API Key:",
+	process.env.SENDGRID_API_KEY ? "Loaded" : "Not loaded"
+);
+
 exports.handler = async (event) => {
 	// Check for POST request
 	if (event.httpMethod !== "OPTIONS") {
