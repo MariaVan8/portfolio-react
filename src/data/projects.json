@@ -9,7 +9,11 @@
 			"Improved understanding of state management in React using the Context API.",
 			"Gained experience in creating more maintainable and scalable code by avoiding prop drilling."
 		],
-		"images": ["vulcan-mobile.png", "vulcan-tablet.png", "vulcan-desktop.png"],
+		"images": [
+			"mobile-popcorn.png",
+			"popcorn-tablet.png",
+			"popcorn-desktop.png"
+		],
 		"stack": ["React", "Javascript", "HTML", "CSS", "API"],
 		"link": "https://reelpopcorn.mariarevelo.com",
 		"source": "https://github.com/MariaVan8/reelpopcorn"
@@ -39,7 +43,7 @@
 			"Gained experience in organizing JavaScript code to maintain clarity and efficiency.",
 			"Enhanced understanding of creating responsive layouts using CSS for a consistent user experience across devices."
 		],
-		"images": ["flag-mobile.png", "flag-tablet.png", "vulcan-desktop.png"],
+		"images": ["flag-mobile.png", "flag-tablet.png", "flag-desktop.png"],
 		"stack": ["JavaScript", "HTML", "CSS"],
 		"link": "https://geoflag.mariarevelo.com/",
 		"source": "https://github.com/MariaVan8/MatchQuest"
