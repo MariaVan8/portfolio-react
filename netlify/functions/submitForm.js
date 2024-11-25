@@ -36,6 +36,7 @@ exports.handler = async (event) => {
 		};
 	}
 
+	console.log("Request Body:", event.body);
 	// Parse the incoming form data
 	const { name, email, message } = JSON.parse(event.body);
 
