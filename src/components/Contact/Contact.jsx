@@ -47,6 +47,7 @@ function Contact() {
 			if (response.ok) {
 				alert("Message sent successfully!");
 				e.target.reset(); // Reset form after submission
+				closeModal();
 			} else {
 				alert("Failed to send message. Please try again later.");
 			}

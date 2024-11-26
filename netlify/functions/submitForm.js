@@ -14,7 +14,7 @@ console.log("Sender Email:", process.env.SENDER_EMAIL);
 
 exports.handler = async (event) => {
 	// Check for POST request
-	if (event.httpMethod !== "OPTIONS") {
+	if (event.httpMethod === "OPTIONS") {
 		return {
 			statusCode: 200,
 			headers: {
@@ -40,6 +40,15 @@ exports.handler = async (event) => {
 	// Parse the incoming form data
 	const { name, email, message } = JSON.parse(event.body);
 
+	if (!name || !email || !message) {
+		return {
+			statusCode: 400,
+			headers: {
+				"Access-Control-Allow-Origin": "https://mariarevelo.com",
+			},
+			body: JSON.stringify({ error: "Missing required fields" }),
+		};
+	}
 	// Define the email content
 	const emailContent = {
 		to: process.env.RECEIVING_EMAIL, // Your receiving email from env
