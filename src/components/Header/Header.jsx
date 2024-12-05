@@ -1,6 +1,6 @@
 import "../Header/Header.scss";
 import Navbar from "../NavBar/Navbar";
-
+import download from "../../assets/icons/download.png";
 import perfil from "../../assets/Images/purple4.png";
 function Header() {
 	return (
@@ -37,11 +37,24 @@ function Header() {
 						learning. I am always eager to
 						<span> adapt and contribute positively</span> to dynamic teams.
 					</p>
-					<a
-						href="#about"
-						className="header_btn">
-						About me
-					</a>
+					<div className="header_button-wrapper">
+						<a
+							href="#about"
+							className="header_btn">
+							About me
+						</a>
+						<a
+							href="Maria_ReveloCV.pdf"
+							className="header_btn"
+							download>
+							CV
+							<img
+								src={download}
+								alt="download"
+								className="header_icon"
+							/>
+						</a>
+					</div>
 				</div>
 			</header>
 		</>

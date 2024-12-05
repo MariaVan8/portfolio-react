@@ -125,10 +125,23 @@
 			text-align: center;
 		}
 	}
+	&_button-wrapper {
+		display: flex;
+		gap: 1rem;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+
+	&_icon {
+		width: 1rem;
+		height: 1rem;
+		margin-left: 0.5rem;
+		vertical-align: sub;
+	}
 
 	&_btn {
 		background-color: $secondary-color;
-		width: 200px;
+		width: 125px;
 		color: $primary-color;
 		margin-bottom: 3rem;
 		padding: 0.5rem 1rem;
