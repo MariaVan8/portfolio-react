@@ -84,7 +84,7 @@
 		&.inline {
 			display: inline-flex;
 			align-items: center;
-			gap: 0.5rem; /* Adjust spacing between "I'm" and "Maria" */
+			gap: 0.5rem;
 		}
 		.item {
 			display: block;
@@ -93,7 +93,7 @@
 	}
 
 	.second-layer p {
-		margin-top: 10px; /* Adjust spacing between lines */
+		margin-top: 10px;
 		font-size: $font-size-xlarge;
 	}
 
@@ -182,7 +182,6 @@
 		}
 		.second-layer {
 			padding: 0 70px;
-			//left: -4rem;
 			&_text {
 				font-size: 65px;
 				line-height: 4.5rem;
@@ -209,6 +208,10 @@
 			margin-bottom: 6rem;
 			width: 180px;
 			font-size: 20px;
+		}
+		&_icon {
+			width: 1.4rem;
+			height: 1.4rem;
 		}
 	}
 }

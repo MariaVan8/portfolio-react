@@ -22,6 +22,23 @@ function Navbar() {
 	const handleNavItemClick = () => {
 		setIsMenuOpen(false);
 	};
+	useEffect(() => {
+		const nav = document.querySelector(".nav");
+		const adjustPadding = () => {
+			if (window.innerWidth > 960 && nav) {
+				document.body.style.paddingTop = `${nav.offsetHeight}px`;
+			} else {
+				document.body.style.paddingTop = "0px";
+			}
+		};
+
+		adjustPadding();
+		window.addEventListener("resize", adjustPadding);
+
+		return () => {
+			window.removeEventListener("resize", adjustPadding);
+		};
+	}, []);
 
 	return (
 		<>

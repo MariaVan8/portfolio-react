@@ -6,13 +6,12 @@ import reactIcon from "../../assets/icons/react.png";
 import angular from "../../assets/icons/angular.png";
 import net from "../../assets/icons/nett.png";
 import DatabaseBox from "../DatabaseBox/DatabaseBox";
-import SoftSkills from "../SoftSkills/SoftSkills";
 
 function Skills() {
 	return (
 		<>
 			<div className="skills">
-				<div className="spacer">
+				<div className="spacer_top">
 					<div className="spacer-line"></div>
 				</div>
 				<div className="skills-container">
