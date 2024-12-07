@@ -147,6 +147,15 @@
 		padding: 0.5rem 1rem;
 		border-radius: 10px;
 	}
+
+	&_btn-cv {
+		background-color: $primary-color;
+		color: $secondary-color;
+		padding: 0.5rem 1rem;
+		border-radius: 12px;
+		margin-bottom: 3rem;
+		width: 125px;
+	}
 }
 
 @media only screen and (min-width: 660px) {
@@ -193,7 +202,12 @@
 		}
 		&_btn {
 			margin-bottom: 6rem;
-			width: 250px;
+			width: 180px;
+			font-size: 20px;
+		}
+		&_btn-cv {
+			margin-bottom: 6rem;
+			width: 180px;
 			font-size: 20px;
 		}
 	}
@@ -273,6 +287,19 @@
 				max-width: 60%;
 			}
 		}
+		&_button-wrapper {
+			justify-content: flex-start;
+		}
+		&_btn {
+			width: 170px;
+		}
+		&_btn-cv {
+			width: 170px;
+		}
+		&_icon {
+			width: 1.4rem;
+			height: 1.3rem;
+		}
 	}
 }
 
@@ -283,6 +310,16 @@
 		}
 		&_text-wrapper {
 			padding: 0 135px;
+		}
+		&_button-wrapper {
+			justify-content: flex-start;
+		}
+		&_btn {
+			width: 170px;
+		}
+		&_icon {
+			width: 1.4rem;
+			height: 1.3rem;
 		}
 	}
 }

@@ -45,7 +45,7 @@ function Header() {
 						</a>
 						<a
 							href="Maria_ReveloCV.pdf"
-							className="header_btn"
+							className="header_btn-cv"
 							download>
 							CV
 							<img
