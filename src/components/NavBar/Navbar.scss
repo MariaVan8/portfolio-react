@@ -12,7 +12,8 @@
 	padding-bottom: 2rem;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 5), rgba(0, 0, 0, 0));
 	&-box {
-		position: absolute;
+		position: fixed;
+		margin-top: 0;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -99,6 +100,9 @@
 			}
 		}
 		.hamburger {
+			width: 5.4rem;
+			height: 5rem;
+			padding-top: 1.6rem;
 			&_1 {
 				width: 50px;
 				height: 6px;
